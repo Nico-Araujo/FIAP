@@ -3,6 +3,8 @@
 #Análise Exploratória de Dados do Agronegócio
 # Dados sobre produção agrícola por estado e cultura
 
+#OBS: Área = hectare e Produtividade = quilograma por hectare
+
 # 1. Carregando os pacotes necessários
 library(readr)
 library(dplyr)
