@@ -1,7 +1,7 @@
 # 🌾 Projeto FarmTech Solutions - Banco de Dados
 
 ## 🎯 Objetivo
-Criar um sistema de banco de dados para guardar informações de sensores usados na plantação (umidade, pH, nutrientes), ações do sistema (como aplicar água e fertilizantes) e dados das plantações.
+Desenvolver um sistema de banco de dados para guardar informações de sensores usados na plantação (umidade, pH, nutrientes), ações do sistema (como aplicar água e fertilizantes) e dados das plantações.
 
 ---
 
