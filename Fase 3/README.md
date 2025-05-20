@@ -42,7 +42,7 @@ A bomba é ativada quando:
 - Fósforo está presente (botão pressionado)
 - Potássio está presente (botão pressionado)
 
-## nstalação
+## Instalação
 1. Conecte os componentes conforme o diagrama
 2. Carregue o código para o ESP32 usando Arduino IDE
 3. Abra o Monitor Serial para visualizar as leituras
