@@ -5,7 +5,7 @@
 Este projeto implementa um sistema de irrigação automatizado utilizando o microcontrolador ESP32, que monitora condições do solo e ativa uma bomba de água quando determinados critérios são atendidos.
 
 ## Componentes Principais
-ESP32: Microcontrolador principal
+ESP32: Microcontrolador principal/n
 Sensor DHT22: Mede umidade e temperatura do ar
 LDR (simulando sensor de pH): Simula a medição do pH do solo
 Botões (P e K): Simulam a detecção de fósforo e potássio no solo
