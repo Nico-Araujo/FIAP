@@ -21,13 +21,15 @@ if (umidade < 50% && fósforo_presente && potássio_presente) {
 }
 
 ## Diagrama do Circuito
+![Cap-1-Circuito](https://github.com/user-attachments/assets/b8f384e4-2354-415f-b865-7cb0ceba3ab8)
+
     ESP32 --> DHT22[Sensor DHT22]
     ESP32 --> LDR[LDR - Simulador de pH]
     ESP32 --> BotaoP[Botão Fósforo]
     ESP32 --> BotaoK[Botão Potássio]
     ESP32 --> Rele[Relé da Bomba]
     Rele --> Bomba[Bomba de Água]
-
+    
 ## Funcionamento
 O sistema monitora continuamente:
 - Umidade do ar (via DHT22)
