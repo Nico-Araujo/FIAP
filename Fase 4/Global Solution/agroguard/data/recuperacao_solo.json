@@ -1,0 +1,126 @@
+{
+  "metadados": {
+    "fonte": "EMBRAPA - Empresa Brasileira de Pesquisa Agropecuária",
+    "descricao": "Técnicas de recuperação de solo por tipo e desastre",
+    "url_fonte": "https://www.embrapa.br/solos"
+  },
+  "tipos_solo": {
+    "Latossolo": {
+      "caracteristicas": {
+        "profundidade": "Muito profundo",
+        "drenagem": "Bem drenado",
+        "fertilidade": "Baixa a média",
+        "resistencia_erosao": "Alta",
+        "ph_natural": "5.0-6.5"
+      },
+      "pos_enchente": {
+        "tempo_secagem_dias": 15,
+        "tecnicas_recuperacao": ["Drenagem superficial", "Subsolagem", "Calagem"],
+        "fertilizante_recomendado": "NPK 10-10-10",
+        "quantidade_fertilizante_kg_ha": 300,
+        "plantas_cobertura": ["Brachiaria", "Crotalária", "Milheto"],
+        "custo_recuperacao_reais_ha": 2500,
+        "eficiencia_recuperacao_percent": 85,
+        "tempo_recuperacao_meses": 6
+      },
+      "pos_incendio": {
+        "tempo_irrigacao_dias": 21,
+        "tecnicas_recuperacao": ["Irrigação controlada", "Matéria orgânica", "Plantio direto"],
+        "fertilizante_recomendado": "Composto orgânico",
+        "quantidade_fertilizante_kg_ha": 2000,
+        "plantas_cobertura": ["Leguminosas", "Gramíneas nativas"],
+        "custo_recuperacao_reais_ha": 3200,
+        "eficiencia_recuperacao_percent": 78,
+        "tempo_recuperacao_meses": 12
+      },
+      "pos_seca": {
+        "tempo_irrigacao_dias": 30,
+        "tecnicas_recuperacao": ["Irrigação por gotejamento", "Mulching", "Quebra-ventos"],
+        "fertilizante_recomendado": "Húmus de minhoca",
+        "quantidade_fertilizante_kg_ha": 1500,
+        "plantas_cobertura": ["Palma forrageira", "Mandacaru"],
+        "custo_recuperacao_reais_ha": 2800,
+        "eficiencia_recuperacao_percent": 72,
+        "tempo_recuperacao_meses": 18
+      }
+    },
+    "Argissolo": {
+      "caracteristicas": {
+        "profundidade": "Profundo",
+        "drenagem": "Moderadamente drenado",
+        "fertilidade": "Média",
+        "resistencia_erosao": "Baixa a média",
+        "ph_natural": "5.5-6.8"
+      },
+      "pos_enchente": {
+        "tempo_secagem_dias": 12,
+        "tecnicas_recuperacao": ["Drenagem", "Descompactação", "Correção pH"],
+        "fertilizante_recomendado": "Fosfato natural",
+        "quantidade_fertilizante_kg_ha": 250,
+        "plantas_cobertura": ["Aveia", "Azevém", "Trevo"],
+        "custo_recuperacao_reais_ha": 1800,
+        "eficiencia_recuperacao_percent": 70,
+        "tempo_recuperacao_meses": 8
+      },
+      "pos_incendio": {
+        "tempo_irrigacao_dias": 14,
+        "tecnicas_recuperacao": ["Irrigação", "Adubação orgânica", "Terraceamento"],
+        "fertilizante_recomendado": "Esterco bovino",
+        "quantidade_fertilizante_kg_ha": 3000,
+        "plantas_cobertura": ["Eucalipto", "Acácia", "Bracatinga"],
+        "custo_recuperacao_reais_ha": 2200,
+        "eficiencia_recuperacao_percent": 65,
+        "tempo_recuperacao_meses": 15
+      },
+      "pos_seca": {
+        "tempo_irrigacao_dias": 25,
+        "tecnicas_recuperacao": ["Microirrigação", "Cobertura morta", "Adubação verde"],
+        "fertilizante_recomendado": "Biofertilizante",
+        "quantidade_fertilizante_kg_ha": 1200,
+        "plantas_cobertura": ["Sorgo", "Girassol", "Mamona"],
+        "custo_recuperacao_reais_ha": 2100,
+        "eficiencia_recuperacao_percent": 68,
+        "tempo_recuperacao_meses": 20
+      }
+    },
+    "Neossolo": {
+      "caracteristicas": {
+        "profundidade": "Raso a pouco profundo",
+        "drenagem": "Excessivamente drenado",
+        "fertilidade": "Baixa",
+        "resistencia_erosao": "Muito baixa",
+        "ph_natural": "6.5-8.5"
+      },
+      "pos_enchente": {
+        "tempo_secagem_dias": 7,
+        "tecnicas_recuperacao": ["Drenagem rápida", "Estabilização", "Revegetação"],
+        "fertilizante_recomendado": "Calcário dolomítico",
+        "quantidade_fertilizante_kg_ha": 400,
+        "plantas_cobertura": ["Capim buffel", "Algaroba", "Caatinga nativa"],
+        "custo_recuperacao_reais_ha": 1500,
+        "eficiencia_recuperacao_percent": 60,
+        "tempo_recuperacao_meses": 10
+      },
+      "pos_incendio": {
+        "tempo_irrigacao_dias": 10,
+        "tecnicas_recuperacao": ["Irrigação emergencial", "Proteção superficial", "Replantio"],
+        "fertilizante_recomendado": "Gesso agrícola",
+        "quantidade_fertilizante_kg_ha": 500,
+        "plantas_cobertura": ["Xique-xique", "Mandacaru", "Juazeiro"],
+        "custo_recuperacao_reais_ha": 1200,
+        "eficiencia_recuperacao_percent": 55,
+        "tempo_recuperacao_meses": 24
+      },
+      "pos_seca": {
+        "tempo_irrigacao_dias": 45,
+        "tecnicas_recuperacao": ["Dessalinização", "Irrigação controlada", "Sombreamento"],
+        "fertilizante_recomendado": "Matéria orgânica",
+        "quantidade_fertilizante_kg_ha": 2500,
+        "plantas_cobertura": ["Palma", "Sisal", "Caju"],
+        "custo_recuperacao_reais_ha": 3500,
+        "eficiencia_recuperacao_percent": 45,
+        "tempo_recuperacao_meses": 30
+      }
+    }
+  }
+}
