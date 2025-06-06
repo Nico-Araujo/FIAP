@@ -1,0 +1,142 @@
+{
+  "metadados": {
+    "fonte": "CEMADEN/INPE/Defesa Civil",
+    "periodo": "2020-2024",
+    "descricao": "Histórico de desastres naturais no Brasil com impactos no solo",
+    "url_fonte": "https://www.gov.br/cemaden/pt-br/assuntos/monitoramento"
+  },
+  "dados": [
+    {
+      "id_desastre": "RS_ENCHENTE_2024",
+      "ano": 2024,
+      "mes": 5,
+      "tipo_desastre": "Enchente",
+      "estado": "RS",
+      "municipios_afetados": ["Porto Alegre", "Canoas", "São Leopoldo", "Novo Hamburgo"],
+      "area_afetada_km2": 1250,
+      "solo_degradado_hectares": 12500,
+      "populacao_afetada": 580000,
+      "tempo_recuperacao_estimado_meses": 8,
+      "severidade": "Alta",
+      "causa_principal": "Chuvas intensas e prolongadas",
+      "impactos_solo": {
+        "compactacao": "Severa",
+        "erosao": "Moderada",
+        "perda_materia_organica": "40%",
+        "alteracao_ph": "-1.2",
+        "contaminacao": "Baixa"
+      },
+      "custo_recuperacao_milhoes": 45.2
+    },
+    {
+      "id_desastre": "MT_INCENDIO_2024",
+      "ano": 2024,
+      "mes": 8,
+      "tipo_desastre": "Incêndio",
+      "estado": "MT",
+      "municipios_afetados": ["Poconé", "Corumbá", "Cáceres"],
+      "area_afetada_km2": 2340,
+      "solo_degradado_hectares": 23400,
+      "populacao_afetada": 125000,
+      "tempo_recuperacao_estimado_meses": 18,
+      "severidade": "Alta",
+      "causa_principal": "Queimadas criminosas e seca",
+      "impactos_solo": {
+        "compactacao": "Baixa",
+        "erosao": "Alta",
+        "perda_materia_organica": "70%",
+        "alteracao_ph": "+1.8",
+        "contaminacao": "Nenhuma"
+      },
+      "custo_recuperacao_milhoes": 78.5
+    },
+    {
+      "id_desastre": "CE_SECA_2023",
+      "ano": 2023,
+      "mes": 12,
+      "tipo_desastre": "Seca",
+      "estado": "CE",
+      "municipios_afetados": ["Fortaleza", "Sobral", "Juazeiro do Norte", "Crato"],
+      "area_afetada_km2": 890,
+      "solo_degradado_hectares": 8900,
+      "populacao_afetada": 340000,
+      "tempo_recuperacao_estimado_meses": 24,
+      "severidade": "Media",
+      "causa_principal": "Estiagem prolongada",
+      "impactos_solo": {
+        "compactacao": "Alta",
+        "erosao": "Baixa",
+        "perda_materia_organica": "25%",
+        "alteracao_ph": "+0.8",
+        "contaminacao": "Salinização"
+      },
+      "custo_recuperacao_milhoes": 32.1
+    },
+    {
+      "id_desastre": "SP_ENCHENTE_2023",
+      "ano": 2023,
+      "mes": 3,
+      "tipo_desastre": "Enchente",
+      "estado": "SP",
+      "municipios_afetados": ["São Paulo", "Guarulhos", "Osasco"],
+      "area_afetada_km2": 450,
+      "solo_degradado_hectares": 4500,
+      "populacao_afetada": 890000,
+      "tempo_recuperacao_estimado_meses": 6,
+      "severidade": "Media",
+      "causa_principal": "Chuvas intensas urbanas",
+      "impactos_solo": {
+        "compactacao": "Moderada",
+        "erosao": "Baixa",
+        "perda_materia_organica": "30%",
+        "alteracao_ph": "-0.8",
+        "contaminacao": "Química urbana"
+      },
+      "custo_recuperacao_milhoes": 28.7
+    },
+    {
+      "id_desastre": "AM_INCENDIO_2022",
+      "ano": 2022,
+      "mes": 9,
+      "tipo_desastre": "Incêndio",
+      "estado": "AM",
+      "municipios_afetados": ["Manaus", "Itacoatiara", "Manacapuru"],
+      "area_afetada_km2": 3200,
+      "solo_degradado_hectares": 32000,
+      "populacao_afetada": 78000,
+      "tempo_recuperacao_estimado_meses": 36,
+      "severidade": "Alta",
+      "causa_principal": "Queimadas para agricultura",
+      "impactos_solo": {
+        "compactacao": "Baixa",
+        "erosao": "Alta",
+        "perda_materia_organica": "80%",
+        "alteracao_ph": "+2.1",
+        "contaminacao": "Nenhuma"
+      },
+      "custo_recuperacao_milhoes": 95.3
+    },
+    {
+      "id_desastre": "MG_ENCHENTE_2022",
+      "ano": 2022,
+      "mes": 1,
+      "tipo_desastre": "Enchente",
+      "estado": "MG",
+      "municipios_afetados": ["Belo Horizonte", "Betim", "Contagem"],
+      "area_afetada_km2": 680,
+      "solo_degradado_hectares": 6800,
+      "populacao_afetada": 450000,
+      "tempo_recuperacao_estimado_meses": 10,
+      "severidade": "Media",
+      "causa_principal": "Chuvas de verão intensas",
+      "impactos_solo": {
+        "compactacao": "Alta",
+        "erosao": "Moderada",
+        "perda_materia_organica": "35%",
+        "alteracao_ph": "-1.0",
+        "contaminacao": "Baixa"
+      },
+      "custo_recuperacao_milhoes": 38.9
+    }
+  ]
+}

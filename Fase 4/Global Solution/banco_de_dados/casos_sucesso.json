@@ -1,0 +1,247 @@
+{
+  "metadados": {
+    "fonte": "EMATER/EMBRAPA - Casos documentados de recuperação",
+    "descricao": "Casos reais de recuperação bem-sucedida de solos pós-desastre",
+    "periodo": "2020-2024"
+  },
+  "casos": [
+    {
+      "id_caso": "RS_RECUPERACAO_2023",
+      "titulo": "Recuperação Pós-Enchente no Vale do Taquari - RS",
+      "localizacao": {
+        "estado": "RS",
+        "municipio": "Lajeado",
+        "coordenadas": {
+          "latitude": -29.4669,
+          "longitude": -51.9611
+        },
+        "area_hectares": 1500
+      },
+      "desastre_original": {
+        "tipo": "Enchente",
+        "data": "2023-07-15",
+        "duracao_dias": 12,
+        "nivel_agua_metros": 3.2
+      },
+      "condicoes_iniciais": {
+        "ph_solo": 5.2,
+        "umidade_percent": 92,
+        "materia_organica_percent": 1.8,
+        "compactacao_nivel": "Severa",
+        "erosao_nivel": "Moderada"
+      },
+      "tecnicas_aplicadas": [
+        {
+          "tecnica": "Drenagem superficial",
+          "inicio": "2023-07-20",
+          "duracao_dias": 15,
+          "custo_reais": 45000
+        },
+        {
+          "tecnica": "Calagem",
+          "inicio": "2023-08-05",
+          "quantidade_toneladas": 120,
+          "custo_reais": 28000
+        },
+        {
+          "tecnica": "Subsolagem",
+          "inicio": "2023-08-15",
+          "profundidade_cm": 40,
+          "custo_reais": 35000
+        },
+        {
+          "tecnica": "Plantio de cobertura",
+          "inicio": "2023-09-01",
+          "especies": ["Aveia preta", "Azevém", "Trevo"],
+          "custo_reais": 22000
+        }
+      ],
+      "resultados": {
+        "tempo_recuperacao_meses": 8,
+        "custo_total_reais": 130000,
+        "custo_por_hectare": 867,
+        "condicoes_finais": {
+          "ph_solo": 6.4,
+          "umidade_percent": 32,
+          "materia_organica_percent": 3.2,
+          "compactacao_nivel": "Leve",
+          "erosao_nivel": "Controlada"
+        },
+        "produtividade_recuperacao_percent": 87,
+        "taxa_sucesso_percent": 92
+      },
+      "licoes_aprendidas": [
+        "Drenagem imediata é crucial nas primeiras 48h",
+        "Calagem deve ser feita após estabilização da umidade",
+        "Plantio de cobertura acelera recuperação da matéria orgânica",
+        "Monitoramento contínuo permite ajustes rápidos"
+      ],
+      "responsavel_tecnico": "Eng. Agr. João Silva - EMATER/RS"
+    },
+    {
+      "id_caso": "MT_RECUPERACAO_2022",
+      "titulo": "Restauração Pós-Incêndio no Pantanal - MT",
+      "localizacao": {
+        "estado": "MT",
+        "municipio": "Poconé",
+        "coordenadas": {
+          "latitude": -16.2567,
+          "longitude": -56.6228
+        },
+        "area_hectares": 850
+      },
+      "desastre_original": {
+        "tipo": "Incêndio",
+        "data": "2022-08-10",
+        "duracao_dias": 8,
+        "temperatura_maxima_celsius": 65
+      },
+      "condicoes_iniciais": {
+        "ph_solo": 8.3,
+        "umidade_percent": 8,
+        "materia_organica_percent": 0.5,
+        "compactacao_nivel": "Baixa",
+        "erosao_nivel": "Alta"
+      },
+      "tecnicas_aplicadas": [
+        {
+          "tecnica": "Irrigação de emergência",
+          "inicio": "2022-08-15",
+          "duracao_dias": 30,
+          "volume_litros_ha": 50000,
+          "custo_reais": 68000
+        },
+        {
+          "tecnica": "Aplicação de matéria orgânica",
+          "inicio": "2022-09-10",
+          "quantidade_toneladas_ha": 15,
+          "custo_reais": 95000
+        },
+        {
+          "tecnica": "Plantio de espécies nativas",
+          "inicio": "2022-10-01",
+          "especies": ["Paratudo", "Lixeira", "Angico"],
+          "densidade_mudas_ha": 400,
+          "custo_reais": 125000
+        },
+        {
+          "tecnica": "Cobertura morta",
+          "inicio": "2022-10-15",
+          "material": "Palha de arroz",
+          "espessura_cm": 5,
+          "custo_reais": 42000
+        }
+      ],
+      "resultados": {
+        "tempo_recuperacao_meses": 12,
+        "custo_total_reais": 330000,
+        "custo_por_hectare": 3882,
+        "condicoes_finais": {
+          "ph_solo": 6.8,
+          "umidade_percent": 28,
+          "materia_organica_percent": 2.8,
+          "compactacao_nivel": "Baixa",
+          "erosao_nivel": "Controlada"
+        },
+        "produtividade_recuperacao_percent": 78,
+        "taxa_sucesso_percent": 85
+      },
+      "licoes_aprendidas": [
+        "Irrigação imediata previne formação de crosta hidrofóbica",
+        "Matéria orgânica é essencial para restaurar vida microbiana",
+        "Espécies nativas se adaptam melhor ao solo degradado",
+        "Cobertura morta protege contra erosão eólica"
+      ],
+      "responsavel_tecnico": "Dr. Carlos Oliveira - UFMT"
+    },
+    {
+      "id_caso": "CE_RECUPERACAO_2021",
+      "titulo": "Revitalização Pós-Seca no Semiárido - CE",
+      "localizacao": {
+        "estado": "CE",
+        "municipio": "Quixadá",
+        "coordenadas": {
+          "latitude": -4.9714,
+          "longitude": -39.0147
+        },
+        "area_hectares": 600
+      },
+      "desastre_original": {
+        "tipo": "Seca",
+        "data": "2021-01-01",
+        "duracao_meses": 18,
+        "precipitacao_percent_normal": 25
+      },
+      "condicoes_iniciais": {
+        "ph_solo": 8.7,
+        "umidade_percent": 5,
+        "materia_organica_percent": 0.8,
+        "compactacao_nivel": "Severa",
+        "salinizacao_nivel": "Alta"
+      },
+      "tecnicas_aplicadas": [
+        {
+          "tecnica": "Dessalinização",
+          "inicio": "2021-06-01",
+          "metodo": "Gesso agrícola + irrigação",
+          "quantidade_toneladas": 180,
+          "custo_reais": 85000
+        },
+        {
+          "tecnica": "Irrigação por gotejamento",
+          "inicio": "2021-07-01",
+          "sistema": "Microaspersão",
+          "area_cobertura_percent": 100,
+          "custo_reais": 145000
+        },
+        {
+          "tecnica": "Plantio de palma forrageira",
+          "inicio": "2021-08-15",
+          "variedade": "Orelha de elefante mexicana",
+          "densidade_plantas_ha": 10000,
+          "custo_reais": 35000
+        },
+        {
+          "tecnica": "Adubação orgânica",
+          "inicio": "2021-09-01",
+          "tipo": "Esterco caprino compostado",
+          "quantidade_toneladas_ha": 8,
+          "custo_reais": 28000
+        }
+      ],
+      "resultados": {
+        "tempo_recuperacao_meses": 24,
+        "custo_total_reais": 293000,
+        "custo_por_hectare": 4883,
+        "condicoes_finais": {
+          "ph_solo": 7.2,
+          "umidade_percent": 22,
+          "materia_organica_percent": 2.1,
+          "compactacao_nivel": "Moderada",
+          "salinizacao_nivel": "Baixa"
+        },
+        "produtividade_recuperacao_percent": 65,
+        "taxa_sucesso_percent": 72
+      },
+      "licoes_aprendidas": [
+        "Dessalinização deve preceder qualquer plantio",
+        "Irrigação localizada economiza água e melhora eficiência",
+        "Palma forrageira é resistente e melhora solo gradualmente",
+        "Adubação orgânica local reduz custos e melhora sustentabilidade"
+      ],
+      "responsavel_tecnico": "Eng. Agr. Maria Santos - EMBRAPA Semiárido"
+    }
+  ],
+  "estatisticas_gerais": {
+    "custo_medio_por_hectare": 3211,
+    "tempo_medio_recuperacao_meses": 14.7,
+    "taxa_sucesso_media_percent": 83,
+    "produtividade_media_recuperacao_percent": 76.7,
+    "tecnicas_mais_eficazes": [
+      "Drenagem imediata",
+      "Correção de pH",
+      "Irrigação controlada",
+      "Plantio de cobertura"
+    ]
+  }
+}
