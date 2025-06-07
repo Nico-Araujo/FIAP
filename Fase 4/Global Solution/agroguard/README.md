@@ -24,7 +24,7 @@ streamlit run app.py
 ```
 
 ## Equipe
-- [Nome dos integrantes aqui]
-
-## Frase para o vídeo:
-"QUERO CONCORRER"
+- Juliano Romeiro Rodrigues
+- Mariana Barbui dos Santos Zitelli
+- Nicolas Antonio Silva Araujo
+- Vitória Pereira Bagatin
