@@ -22,6 +22,7 @@ Este projeto simula a coleta de dados de sensores com ESP32 em ambiente simulado
    - Crítico:
      - < 5 cm → Obstrução
      - > 250 cm → Peça ausente
+   https://github.com/NicoAraujo/FIAP/blob/6626259893ebeade8ee26d3f41d3b75ba8aca020/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Dist%C3%A2ncia.pdf
 
 ## Conteúdo
 
@@ -45,8 +46,3 @@ Você verá três gráficos:
 - Temperatura x Tempo (com alertas)
 - Vibração x Tempo (com alertas)
 - Distância x Tempo (com zonas críticas)
-
----
-
-**Autor**: Juliano Romeiro  
-**Curso**: Inteligência Artificial – FIAP  
