@@ -116,6 +116,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🚀 Execução
 
-1. Copie os códigos deste repositório:
+1. Copie o código deste repositório: ```cpp
+{% raw %}{% include_relative /caminho/arquivo.ino %}{% endraw %}
 2. Cole no software escolhido para a simulação (IDE Arduino, VS Code, Wokwi...)
 
