@@ -54,7 +54,7 @@ Relé: Desliga equipamentos automaticamente em casos críticos.
 
 ## Circuito
 
-<img = Circuito-Challenge-Esp32.png>
+![Circuito-Challenge-Esp32.png](https://github.com/user-attachments/assets/b8f384e4-2354-415f-b865-7cb0ceba3ab8)
 
 
 ## 📁 Estrutura de pastas
