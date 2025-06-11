@@ -15,14 +15,14 @@ Este projeto simula a coleta de dados de sensores com ESP32 em ambiente simulado
    - Normal: até 1.0g
    - Alerta: > 1.0g
    - Crítico: ≥ 2.0g → Parada simulada
-   ![Monitoramento-Vibracao](https://github.com/NicoAraujo/FIAP/blob/56e7c37b2d53bb490bf1558badbd3be7d902cabc/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Vibra%C3%A7%C3%A3o.pdf)
+   ![Monitoramento-Vibracao](https://github.com/Nico-Araujo/FIAP/blob/56e7c37b2d53bb490bf1558badbd3be7d902cabc/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Vibra%C3%A7%C3%A3o.pdf)
 
 3. **Distância (HC-SR04)** (cm)
    - Normal: 10 cm a 200 cm
    - Crítico:
      - < 5 cm → Obstrução
      - > 250 cm → Peça ausente
-   ![Monitoramento-Distancia](https://github.com/NicoAraujo/FIAP/blob/6626259893ebeade8ee26d3f41d3b75ba8aca020/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Dist%C3%A2ncia.pdf)
+   ![Monitoramento-Distancia](https://github.com/Nico-Araujo/FIAP/blob/5b5ec4f7d4b1d047b4172266f1ef579758151ca5/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Dist%C3%A2ncia_page-0001.jpg)
 
 ## Conteúdo
 
