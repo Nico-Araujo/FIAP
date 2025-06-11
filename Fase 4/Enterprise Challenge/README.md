@@ -62,6 +62,11 @@ Sistema de Alertas
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>Simulação Sensores</b>: Nesta pasta se encontram os arquivos da coleta de dados de sensores com ESP32 em ambiente simulado. Em vez de dados reais, usamos dados gerados e analisados em R.
+- <b>Circuito-Challenge-Esp32.png</b>: Imagem do circuito e todos os componentes no Wokwi
+- <b>Codigo-Circuito-Challenge-Esp32.cpp</b>: Código em c++ do circuito
+- <b>Teste-1-Normal.png</b>: Print da simulação em condições normais
+- <b>Teste-2-Alerta.png</b>: Print da simulação em condições de alerta
+- <b>Teste-3-Critico.png</b>: Print da simulação em condições de estado crítico
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
