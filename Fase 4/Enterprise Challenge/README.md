@@ -4,8 +4,6 @@
 
 # Enterprise Challenge - Sprint 2 - Reply
 
-## Nome do grupo
-
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/juliano-romeiro-rodrigues/">Juliano Romeiro Rodrigues</a>
 - <a href="">Mariana Barbui dos Santos Zitelli</a>
