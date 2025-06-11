@@ -45,9 +45,9 @@ Sensor de Distância (HC-SR04)
 
 Sistema de Alertas
 - LED Verde: Condições normais.
-  [Teste-1](https://github.com/Nico-Araujo/FIAP/blob/7b90c023259156c022748d47bcb00d4fa08d29d1/Fase%204/Enterprise%20Challenge/Teste-1-Normal.png)
+  ![Teste-1-Normal](https://github.com/Nico-Araujo/FIAP/blob/7b90c023259156c022748d47bcb00d4fa08d29d1/Fase%204/Enterprise%20Challenge/Teste-1-Normal.png)
 - LED Amarelo: Alerta (parâmetro fora da faixa ideal, mas não crítico).
-  [Teste-2]()
+  [Teste-2-Alerta.png](https://github.com/Nico-Araujo/FIAP/blob/b8ae03a5cae66d37746eaffc43f392e569417d6a/Fase%204/Enterprise%20Challenge/Teste-2-Alerta.png)
 - LED Vermelho + Buzzer (1000Hz): Emergência (ação imediata necessária).
   [Teste-3]()
 - Relé: Desliga equipamentos automaticamente em casos críticos.
