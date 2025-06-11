@@ -63,5 +63,56 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+## Pré-requisitos
+
+### Hardware
+- Placa ESP32 (ex: ESP32-WROOM-32)
+- Sensores:
+  - DS18B20 (temperatura)
+  - MPU6050 (vibração)
+  - HC-SR04 (distância)
+- Componentes:
+  - 3 LEDs (verde, amarelo, vermelho)
+  - Buzzer ativo 5V
+  - Relé 5V
+  - Resistor 4.7kΩ
+  - Protoboard e jumpers
+
+### Software
+- [Arduino IDE 1.8+](https://www.arduino.cc/en/software)
+- Pacote ESP32
+
+### Bibliotecas (instale via `Sketch > Incluir Biblioteca > Gerenciar Bibliotecas`)
+- OneWire
+- DallasTemperature
+- MPU6050 (by Electronic Cats)
+- Wire (já vem instalada)
+
+## Instalação
+
+1. **Conecte os componentes** seguindo o diagrama:
+
+ | Sensor       | Pino ESP32 |
+ |--------------|-----------|
+ | DS18B20 (DQ) | GPIO4     |
+ | HC-SR04 (Trig)| GPIO5    |
+ | HC-SR04 (Echo)| GPIO18   |
+ | MPU6050 (SDA)| GPIO15    |
+ | MPU6050 (SCL)| GPIO16    |
+ | Relé         | GPIO19    |
+ | Buzzer       | GPIO23    |
+ | LED Verde    | GPIO21    |
+ | LED Amarelo  | GPIO22    |
+ | LED Vermelho | GPIO25    |
+
+ > **Importante:** Use resistor 4.7kΩ entre DQ e VCC no DS18B20 (Fazendo um pull up)
+
+2. **Configure a IDE Arduino**:
+ - Selecione `Ferramentas > Placa > ESP32 Dev Module`
+ - Escolha a porta COM correta
+
+## 🚀 Execução
+
+1. Copie os códigos deste repositório:
+2. Cole no software escolhido para a simulação (IDE Arduino, VS Code, Wokwi...)
 
