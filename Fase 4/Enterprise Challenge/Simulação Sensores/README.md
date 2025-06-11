@@ -9,20 +9,20 @@ Este projeto simula a coleta de dados de sensores com ESP32 em ambiente simulado
    - Normal: até 60°C
    - Alerta: > 60°C
    - Crítico: ≥ 90°C → Desligamento simulado
-     (https://github.com/NicoAraujo/FIAP/blob/a8f30be6e90b2edd111ec9580bb5a163cb989486/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Temperatura.pdf)
+     ![Monitoramento-Temperatura](https://github.com/NicoAraujo/FIAP/blob/a8f30be6e90b2edd111ec9580bb5a163cb989486/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Temperatura.pdf)
 
 2. **Vibração** (g)
    - Normal: até 1.0g
    - Alerta: > 1.0g
    - Crítico: ≥ 2.0g → Parada simulada
-   (https://github.com/NicoAraujo/FIAP/blob/56e7c37b2d53bb490bf1558badbd3be7d902cabc/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Vibra%C3%A7%C3%A3o.pdf)
+   ![Monitoramento-Vibracao](https://github.com/NicoAraujo/FIAP/blob/56e7c37b2d53bb490bf1558badbd3be7d902cabc/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Vibra%C3%A7%C3%A3o.pdf)
 
 3. **Distância (HC-SR04)** (cm)
    - Normal: 10 cm a 200 cm
    - Crítico:
      - < 5 cm → Obstrução
      - > 250 cm → Peça ausente
-   (https://github.com/NicoAraujo/FIAP/blob/6626259893ebeade8ee26d3f41d3b75ba8aca020/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Dist%C3%A2ncia.pdf)
+   ![Monitoramento-Distancia](https://github.com/NicoAraujo/FIAP/blob/6626259893ebeade8ee26d3f41d3b75ba8aca020/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Dist%C3%A2ncia.pdf)
 
 ## Conteúdo
 
