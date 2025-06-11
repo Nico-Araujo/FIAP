@@ -9,7 +9,7 @@ Este projeto simula a coleta de dados de sensores com ESP32 em ambiente simulado
    - Normal: até 60°C
    - Alerta: > 60°C
    - Crítico: ≥ 90°C → Desligamento simulado
-     ![Monitoramento-Temperatura](https://github.com/NicoAraujo/FIAP/blob/a8f30be6e90b2edd111ec9580bb5a163cb989486/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Temperatura.pdf)
+     ![Monitoramento de Temperatura.pdf](https://github.com/NicoAraujo/FIAP/blob/a8f30be6e90b2edd111ec9580bb5a163cb989486/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Temperatura.pdf)
 
 2. **Vibração** (g)
    - Normal: até 1.0g
