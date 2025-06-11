@@ -28,6 +28,7 @@ Sensor de Temperatura (DS18B20)
 - Alerta: >60°C (aciona LED amarelo)
 - Crítico: >80°C (aciona LED vermelho + buzzer)
 - Emergência: ≥90°C (desliga equipamento via relé)
+- Motivo da escolha: Alta precisão (±0.5°C); Interface OneWire (fácil integração); À prova d'água (para ambientes industriais); Faixa ampla (-55°C a +125°C)
 
 Sensor de Vibração (MPU6050)
 - Mede aceleração em "g" (1g = 9.81 m/s²).
@@ -35,17 +36,14 @@ Sensor de Vibração (MPU6050)
 - Normal: 0.1g a 0.5g
 - Alerta: >1.0g (indica desbalanceamento)
 - Crítico: >2.0g (desliga máquina automaticamente)
+- Motivo da escolha: Mede vibração em 3 eixos (dados em 'g'); Comunicação I2C padrão; Custo-benefício para monitoramento mecânico
 
 Sensor de Distância (HC-SR04)
 - Detecta obstáculos ou falhas em esteiras industriais (faixa: 2cm a 4m).
 - Limites operacionais:
 - Normal: 10cm a 200cm
 - Alerta: <5cm (obstrução) ou >250cm (falta de peça)
-- Motivo da escolha:
--- Faixa de medição ideal (2cm-4m)
--- Baixo consumo de energia
--- Imunidade a interferências luminosas
--- Custo acessível para aplicações industriais
+- Motivo da escolha: Baixo consumo de energia; Imunidade a interferências luminosas; Custo acessível para aplicações industriais
 
 Sistema de Alertas
 - LED Verde: Condições normais.
