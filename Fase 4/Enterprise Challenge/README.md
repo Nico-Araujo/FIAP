@@ -116,6 +116,6 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🚀 Execução
 
-1. Copie o código deste repositório: 
+1. Copie o código deste repositório: [aqui](https://github.com/Nico-Araujo/FIAP/blob/4ced673f5fbabc7227ff271ea7cfacd9469c7b51/Fase%204/Enterprise%20Challenge/Codigo-Circuito-Challenge-Esp32.cpp)
 2. Cole no software escolhido para a simulação (IDE Arduino, VS Code, Wokwi...)
 
