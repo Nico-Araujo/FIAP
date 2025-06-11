@@ -56,6 +56,8 @@ Sistema de Alertas
 
 ![Circuito-Challenge-Esp32.png](https://github.com/Nico-Araujo/FIAP/blob/5cc8750ab00ef7c1a4fcdfb5e586621566fd1ac5/Fase%204/Enterprise%20Challenge/Circuito-Challenge-Esp32.png)
 
+Para verificar a funcionalidade do circuito basta clicar [aqui](https://wokwi.com/projects/433493506824089601)
+
 
 ## 📁 Estrutura de pastas
 
