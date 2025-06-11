@@ -25,7 +25,7 @@ Este projeto simula a coleta de dados de sensores com ESP32 em ambiente simulado
    - Normal: 10 cm a 200 cm
    - Crítico:
      - < 5 cm → Obstrução
-     - < 250 cm → Peça ausente
+     - > 250 cm → Peça ausente
    
 ![Monitoramento-Distancia](https://github.com/Nico-Araujo/FIAP/blob/5b5ec4f7d4b1d047b4172266f1ef579758151ca5/Fase%204/Enterprise%20Challenge/Simula%C3%A7%C3%A3o%20Sensores/Monitoramento%20de%20Dist%C3%A2ncia_page-0001.jpg)
 
