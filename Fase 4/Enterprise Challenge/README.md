@@ -49,7 +49,7 @@ Sistema de Alertas
 - LED Amarelo: Alerta (parâmetro fora da faixa ideal, mas não crítico).
   [Teste-2-Alerta.png](https://github.com/Nico-Araujo/FIAP/blob/b8ae03a5cae66d37746eaffc43f392e569417d6a/Fase%204/Enterprise%20Challenge/Teste-2-Alerta.png)
 - LED Vermelho + Buzzer (1000Hz): Emergência (ação imediata necessária).
-  [Teste-3]()
+  [Teste-3-Critico](https://github.com/Nico-Araujo/FIAP/blob/0db3c5e7fa86e66ca519f7b2eac04c727f752b92/Fase%204/Enterprise%20Challenge/Teste-3-Critico.png)
 - Relé: Desliga equipamentos automaticamente em casos críticos.
 
 ## Circuito
