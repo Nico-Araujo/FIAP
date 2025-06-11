@@ -23,21 +23,43 @@ Este projeto foi desenvolvido no contexto da metodologia PBL (Problem-Based Lear
 O sistema utiliza um microcontrolador ESP32, combinado com sensores de baixo custo, para fornecer alertas visuais e sonoros quando as condições operacionais ultrapassam limites pré-definidos. A solução é escalável e pode ser adaptada para diferentes cenários industriais, desde linhas de produção até equipamentos isolados
 
 
+## 🔋 Componentes e Funcionalidades
+
+Sensor de Temperatura (DS18B20)
+Monitora a temperatura em °C.
+Limites operacionais:
+Normal: 0°C a 60°C
+Alerta: >60°C (aciona LED amarelo)
+Crítico: >80°C (aciona LED vermelho + buzzer)
+Emergência: ≥90°C (desliga equipamento via relé)
+
+Sensor de Vibração (MPU6050)
+Mede aceleração em "g" (1g = 9.81 m/s²).
+Limites operacionais:
+Normal: 0.1g a 0.5g
+Alerta: >1.0g (indica desbalanceamento)
+Crítico: >2.0g (desliga máquina automaticamente)
+
+Sensor de Distância (HC-SR04)
+Detecta obstáculos ou falhas em esteiras industriais (faixa: 2cm a 4m).
+Limites operacionais:
+Normal: 10cm a 200cm
+Alerta: <5cm (obstrução) ou >250cm (falta de peça)
+
+Sistema de Alertas
+LED Verde: Condições normais.
+LED Amarelo: Alerta (parâmetro fora da faixa ideal, mas não crítico).
+LED Vermelho + Buzzer (1000Hz): Emergência (ação imediata necessária).
+Relé: Desliga equipamentos automaticamente em casos críticos.
+
+## Circuito
+
+
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
-
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
-
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
-
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
-
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+- <b>Simulação Sensores</b>: Nesta pasta se encontram os arquivos da coleta de dados de sensores com ESP32 em ambiente simulado. Em vez de dados reais, usamos dados gerados e analisados em R.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
@@ -46,18 +68,6 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 *Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
 
 
-## 🗃 Histórico de lançamentos
-
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
 
 ## 📋 Licença
 
