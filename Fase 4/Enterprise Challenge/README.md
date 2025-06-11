@@ -41,6 +41,11 @@ Sensor de Distância (HC-SR04)
 - Limites operacionais:
 - Normal: 10cm a 200cm
 - Alerta: <5cm (obstrução) ou >250cm (falta de peça)
+- Motivo da escolha:
+-- Faixa de medição ideal (2cm-4m)
+-- Baixo consumo de energia
+-- Imunidade a interferências luminosas
+-- Custo acessível para aplicações industriais
 
 Sistema de Alertas
 - LED Verde: Condições normais.
