@@ -1,5 +1,5 @@
 # FIAP - Faculdade de Informática e Administração Paulista
- href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a>
+ <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a>
 
 
 ## 📜 Descrição
