@@ -63,7 +63,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
  | LCD (SDA) | GPIO21    |
  | LCD (SCL) | GPIO22    |
 
-![Circuito.png](copiar path)
+![Circuito.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Circuito.png)
 
  > **Importante:** Use os Resistores de 10kΩ entre a entrada do pino ESP32 e VCC no Slide Switch (P) e (K) (Fazendo um pull up)
 
@@ -82,46 +82,46 @@ Para verificar a funcionalidade do circuito basta clicar [aqui]() ou se desejar 
 
 - Inicialização do circuito:
 
-![Plotter-variaveis-zeradas.png](copiar path)
-Circuito inicializado e variáveis zeradas
+![Plotter-variaveis-zeradas.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-variaveis-zeradas.png)
+Circuito iniciado e variáveis zeradas
 
 - Ativação da bomba
-![Plotter-var-bomba.png](copiar path)
+![Plotter-var-bomba.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-bomba.png)
 
 - Leitura da variação de pH
-![Plotter-var-pH.png](copiar path)
+![Plotter-var-pH.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-pH.png)
 
 - Leitura da variação de umidade
-![Plotter-var-umidade.png](copiar path)
+![Plotter-var-umidade.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-umidade.png)
 
 - Ativação do circuito
-![Plotter-var-geral.png](copiar path)
+![Plotter-var-geral.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-geral.png)
 Nesta imagem é possível observar a funcionalidade do circuito em uma simulação, onde o solo de início estava com baixos níveis de umidade, pH e nutrientes. Após o ajuste dos nutrientes e a ativação da bomba, percebe-se que o sistema se encontra em equilíbrio.
 
 ## Principais Otimizações Aplicadas
 
-- Tipos de Dados Específicos
+1. Tipos de Dados Específicos
  - uint8_t para pinos (1 byte cada)
  - int16_t para leituras analógicas (2 bytes)
  - bool para estados lógicos (1 byte)
 
-- Estrutura de Dados Organizada
+2.  Estrutura de Dados Organizada
  - Struct SensorData agrupa todas as variáveis relacionadas
  - Reduz fragmentação de memória
 
-- Otimização de Strings com F()
+3. Otimização de Strings com F()
  - Strings constantes armazenadas na flash (PROGMEM)
  - Libera RAM (ex: lcd.print(F("Texto")))
 
-- Separação Clara de Funções
+4. Separação Clara de Funções
  - Cada função tem uma responsabilidade única
  - Código mais legível e manutenível
 
-- Formato Serial Plotter
+5. Formato Serial Plotter
  - Saída padronizada para visualização gráfica
  - Labels consistentes para cada variável
 
-- Operações Matemáticas Eficientes
+6. Operações Matemáticas Eficientes
  - Uso de 10.0f para cálculos float otimizados
  - map() seguido de divisão para melhor precisão
 
