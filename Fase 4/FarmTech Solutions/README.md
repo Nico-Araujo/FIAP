@@ -105,16 +105,16 @@ Nesta imagem do Serial Plotter, é possível observar o circuito em operação d
 ## Principais Otimizações Aplicadas
 
 1. Tipos de Dados Específicos
-  - uint8_t para pinos (1 byte cada)
-  - int16_t para leituras analógicas (2 bytes)
-  - bool para estados lógicos (1 byte)
+  - `uint8_t` para pinos (1 byte cada)
+  - `int16_t` para leituras analógicas (2 bytes)
+  - `bool` para estados lógicos (1 byte)
 
 2.  Estrutura de Dados Organizada
-  - Struct SensorData agrupa todas as variáveis relacionadas
+  - `Struct SensorData` agrupa todas as variáveis relacionadas
   - Reduz fragmentação de memória
 
 3. Otimização de Strings com F()
-  - Strings constantes armazenadas na flash (PROGMEM)
+  - `Strings` constantes armazenadas na flash (PROGMEM)
   - Libera RAM (ex: lcd.print(F("Texto")))
 
 4. Separação Clara de Funções
@@ -123,11 +123,11 @@ Nesta imagem do Serial Plotter, é possível observar o circuito em operação d
 
 5. Formato Serial Plotter
   - Saída padronizada para visualização gráfica
-  - Labels consistentes para cada variável
+  - `Labels` consistentes para cada variável
 
 6. Operações Matemáticas Eficientes
-  - Uso de 10.0f para cálculos float otimizados
-  - map() seguido de divisão para melhor precisão
+  - Uso de `10.0f` para cálculos `float` otimizados
+  - `map()` seguido de divisão para melhor precisão
 
 ## Benefícios das Otimizações
 
