@@ -78,7 +78,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔋 Funcionalidades
 
-Para verificar a funcionalidade do circuito basta clicar [aqui]() ou se desejar fazer sua própria simulação, basta clicar [aqui](https://wokwi.com/projects/434222558839003137)
+Para verificar a funcionalidade do circuito, basta clicar [aqui](). Se desejar fazer sua própria simulação, clique [aqui](https://wokwi.com/projects/434222558839003137)
 
 - Inicialização do circuito:
 
