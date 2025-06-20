@@ -73,7 +73,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🚀 Execução
 
-1. Copie o código deste repositório: [aqui](copiar path)
+1. Copie o código deste repositório: [aqui](https://github.com/Nico-Araujo/FIAP/blob/b2f8d5f77a9c252f9b58ef1d53cf17e6384395c3/Fase%204/FarmTech%20Solutions/Codigo-Circuito-FarmTech-ESP32.cpp)
 2. Cole e execute no software escolhido (IDE Arduino, VS Code, Wokwi...)
 
 ## 🔋 Funcionalidades
@@ -86,59 +86,63 @@ Para verificar a funcionalidade do circuito basta clicar [aqui]() ou se desejar 
 Circuito iniciado e variáveis zeradas
 
 - Ativação da bomba
+
 ![Plotter-var-bomba.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-bomba.png)
 
 - Leitura da variação de pH
+
 ![Plotter-var-pH.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-pH.png)
 
 - Leitura da variação de umidade
+
 ![Plotter-var-umidade.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-umidade.png)
 
 - Ativação do circuito
+
 ![Plotter-var-geral.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-geral.png)
-Nesta imagem é possível observar a funcionalidade do circuito em uma simulação, onde o solo de início estava com baixos níveis de umidade, pH e nutrientes. Após o ajuste dos nutrientes e a ativação da bomba, percebe-se que o sistema se encontra em equilíbrio.
+Nesta imagem do Serial Plotter, é possível observar o circuito em operação durante a simulação. Inicialmente, o solo apresentava níveis baixos de umidade, pH e nutrientes. Após o ajuste dos nutrientes (fósforo e potássio) e a ativação automática da bomba de irrigação, o sistema estabiliza-se progressivamente, atingindo condições ideais de cultivo e demonstrando perfeito equilíbrio.
 
 ## Principais Otimizações Aplicadas
 
 1. Tipos de Dados Específicos
- - uint8_t para pinos (1 byte cada)
- - int16_t para leituras analógicas (2 bytes)
- - bool para estados lógicos (1 byte)
+  - uint8_t para pinos (1 byte cada)
+  - int16_t para leituras analógicas (2 bytes)
+  - bool para estados lógicos (1 byte)
 
 2.  Estrutura de Dados Organizada
- - Struct SensorData agrupa todas as variáveis relacionadas
- - Reduz fragmentação de memória
+  - Struct SensorData agrupa todas as variáveis relacionadas
+  - Reduz fragmentação de memória
 
 3. Otimização de Strings com F()
- - Strings constantes armazenadas na flash (PROGMEM)
- - Libera RAM (ex: lcd.print(F("Texto")))
+  - Strings constantes armazenadas na flash (PROGMEM)
+  - Libera RAM (ex: lcd.print(F("Texto")))
 
 4. Separação Clara de Funções
- - Cada função tem uma responsabilidade única
- - Código mais legível e manutenível
+  - Cada função tem uma responsabilidade única
+  - Código mais legível e manutenível
 
 5. Formato Serial Plotter
- - Saída padronizada para visualização gráfica
- - Labels consistentes para cada variável
+  - Saída padronizada para visualização gráfica
+  - Labels consistentes para cada variável
 
 6. Operações Matemáticas Eficientes
- - Uso de 10.0f para cálculos float otimizados
- - map() seguido de divisão para melhor precisão
+  - Uso de 10.0f para cálculos float otimizados
+  - map() seguido de divisão para melhor precisão
 
 ## Benefícios das Otimizações
 
 1. Economia de Memória RAM
-- Redução de ~35% no uso de memória em relação à versão original
-- Evita overflow em projetos maiores
+  - Redução de ~35% no uso de memória em relação à versão original
+  - Evita overflow em projetos maiores
 
 2. Maior Velocidade de Execução
-- Tipos menores = processamento mais rápido
-- Operações matemáticas mais eficientes
+  - Tipos menores = processamento mais rápido
+  - Operações matemáticas mais eficientes
 
 3. Código Mais Profissional
-- Melhor organização e boas práticas
-- Facilidade para adicionar novos recursos
+  - Melhor organização e boas práticas
+  - Facilidade para adicionar novos recursos
 
 4. Compatibilidade Mantida
-- Todas as funcionalidades originais preservadas
-- Melhorias transparentes para o usuário final
+  - Todas as funcionalidades originais preservadas
+  - Melhorias transparentes para o usuário final
