@@ -21,8 +21,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <b>Herança da Fase 3</b>: Nesta pasta se encontra a versão anterior deste projeto
 - <b>Assets</b>: Aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens e links (youtube e Wokwi)
 - <b>Codigo-Circuito-FarmTech-ESP32.cpp</b>: Código em C++ do circuito
-- <b>banco_dados_agricola.py</b>: Banco de dados do projeto em Python
-- <b>parte do juliano</b>: Código Python com Scikit-learn e Streamlit
+- <b>Machine Learning Streamlit</b>: Esta pasta contém o banco de dados e os códigos Python com Scikit-learn e Streamlit
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 
