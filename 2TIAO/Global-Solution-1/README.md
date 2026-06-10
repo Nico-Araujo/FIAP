@@ -44,7 +44,9 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
     - `01_dataset/`: Script de geração de dados e o dataset gerado (`anomalias_uap.csv`).
     - `02_machine_learning/`: Treinamento e salvamento do modelo (`modelo_uap.joblib`).
     - `03_visao_computacional/`: Script de detecção via OpenCV.
-    - `agente_rag.py`: Cérebro analítico que cruza dados com relatórios da NASA.
+    - `agente_rag.ipynb`: Cérebro analítico que cruza dados com relatórios da NASA.
+    - `Flight_Radar.ipynb`: Módulo de filtragem e validação de tráfego aéreo.
+    - `data`: Relatórios PDF da NASA sobre UAP
     - `index.html`: Dashboard de monitoramento em tempo real.
 - <b>README.md</b>: Arquivo guia do projeto.
 
