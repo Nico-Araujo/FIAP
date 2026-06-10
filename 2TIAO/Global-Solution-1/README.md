@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://www.fiap.com.br/">
-  <img src="../../../assets/logo-fiap.png" 
+  <img src="https://www.fiap.com.br/wp-content/themes/fiap2016/assets/images/logo-fiap.png" 
        alt="FIAP - Faculdade de Informática e Administração Paulista" 
        width="40%">
 </a>
@@ -10,75 +10,86 @@
 
 <br>
 
-# Nome do projeto/atividade
+# SkyGuard Defense System
 
-## Nome do grupo
+## Nome do grupo: [INSIRA O NOME DO GRUPO AQUI]
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 5</a>
+- <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a> 
+- <a href="https://www.linkedin.com/in/vitoria-bagatin-31ba88266/">Vitória Pereira Bagatin</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do Tutor</a>
+- <a href="LINK_LINKEDIN">Nome do Tutor</a>
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/in/andregodoichiovato/">Nome do Coordenador</a>
+- <a href="https://www.linkedin.com/in/andregodoichiovato/">André Godoi Chiovato</a>
 
 
 ## 📜 Descrição
+O espaço deixou de ser apenas um território científico e passou a representar uma das maiores fronteiras tecnológicas e estratégicas da atualidade. Com o aumento exponencial de dispositivos, satélites e tráfego aeroespacial, a segurança e o monitoramento autônomo tornaram-se pilares fundamentais da nova economia espacial. O **SkyGuard Defense System** surge como uma Prova de Conceito (POC) inovadora, desenvolvida para responder ao desafio de como a Inteligência Artificial e a automação podem impulsionar soluções de monitoramento remoto e segurança em ambientes críticos.
 
-*Descreva seu projeto com base no texto da Global Solution (até 600 palavras)*
+O SkyGuard atua como um sistema de defesa aeroespacial inteligente, capaz de detectar, rastrear e analisar Fenômenos Aéreos Não Identificados (UAPs) em tempo real. A solução elimina a dependência de processos manuais de vigilância, integrando quatro camadas tecnológicas distintas para garantir uma resposta autônoma:
 
+* **Percepção (Visão Computacional):** Utilizando algoritmos de subtração de fundo e detecção de movimento com OpenCV, o sistema monitora o céu em tempo real. Ele extrai propriedades cinemáticas e morfológicas (como velocidade em Mach, aceleração em G, formato e assinatura térmica) de qualquer objeto detectado.
+* **Triagem e Filtragem (Edge Computing):** O sistema cruza as coordenadas detectadas com a API da OpenSky Network, filtrando tráfego aéreo comercial conhecido e processando apenas o que é, de fato, uma anomalia.
+* **Inteligência Preditiva (Machine Learning):** Dados filtrados são submetidos a um pipeline de Machine Learning (Isolation Forest e Random Forest). O modelo, treinado com base sintética e histórica, distingue com alta precisão objetos convencionais de anomalias físicas.
+* **IA Generativa e RAG:** Ao identificar uma anomalia, o SkyGuard aciona um agente inteligente baseado em RAG (Llama 3 local). O sistema processa documentos técnicos e relatórios aeroespaciais oficiais da NASA e AARO para gerar um parecer técnico fundamentado para o operador.
+
+A solução é consolidada através de um Dashboard Inteligente e integração IoT (simulação via ESP32) para alertas físicos. O SkyGuard representa a integração prática de conhecimentos de IA, provando que a convergência tecnológica é o caminho para resolver problemas da nova fronteira espacial.
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>docs</b>: Pasta destinada à documentação textual, incluindo brainstorm, atas e registros de reuniões, desenhos, prints, diagramas, storyboard, estratégia de IA e arquitetura e etc.
-
-- <b>src</b>: Todo o código fonte desenvolvido, como scripts em Python, R, JS ou HTML, notebooks, códigos para ESP32/Arduino, APIs ou microsserviços, além de modelos, inferências e etc. Os tipos de arquivos e códigos são definidos no enunciado da atividade.
-
-- <b>data</b>: Contém os dados utilizados, como arquivos CSV, Excel, JSON, bases sintéticas e etc.
-
-- <b>README.md</b>: Arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
-
-
-‼️ OBSERVAÇÃO DO TUTOR, favor desconsiderar do seu arquivo final: não há obrigação de usar todas as pastas, use apenas o que fizer SENTIDO para a entrega. ‼️
-
+- <b>docs</b>: Pasta destinada à documentação, incluindo relatórios de métricas (`relatorio_metricas.txt`) e diagramas de arquitetura.
+- <b>src</b>: Todo o código fonte desenvolvido.
+    - `01_dataset/`: Script de geração de dados.
+    - `02_machine_learning/`: Treinamento e salvamento do modelo (`modelo_uap.joblib`).
+    - `03_visao_computacional/`: Script de detecção via OpenCV.
+    - `agente_rag.py`: Cérebro analítico que cruza dados com relatórios da NASA.
+    - `index.html`: Dashboard de monitoramento em tempo real.
+- <b>data</b>: Contém o dataset gerado (`anomalias_uap.csv`).
+- <b>README.md</b>: Arquivo guia do projeto.
 
 ## 📎 Links e Observações
 
-- <b>Listagem de Links</b>: Links do projeto (ex. vídeos da entrega, páginas, etc.), 
-
-- <b>Explicação de decisões técnicas</b>: Observações do projeto,
-
-- <b>Observações Gerais</b>: Caso o projeto seja relacionado à alguma competição, deixar registrado no README se aceita ou não participar.
-
+- <b>Vídeo de Apresentação</b>: [INSERIR LINK DO YOUTUBE AQUI]
+- <b>Explicação de decisões técnicas</b>: Optamos por uma arquitetura de processamento local (Edge Computing) com Ollama para garantir que o sistema de defesa seja independente de latência de rede e mantenha a privacidade de dados aeroespaciais sensíveis.
+- <b>Observações Gerais</b>: O projeto é uma POC (Prova de Conceito). Aceitamos participar da competição do pódio.
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório.*
+### Pré-requisitos
+Instale as bibliotecas necessárias:
+pip install numpy pandas scikit-learn joblib opencv-python langchain langchain-community langchain-huggingface chromadb pypdf
 
+Passo a passo
+Gerar Base de Dados:
 
-## 🗃 Histórico de lançamentos
+```Bash
+python src/01_dataset/gerar_dataset.py
+```
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
+Treinar Modelo de IA:
 
----
+```Bash
+python src/02_machine_learning/treinar_modelo.py
+```
+Executar Detecção:
 
+```Bash
+python src/03_visao_computacional/detectar_objetos.py --webcam
+```
 
-## 📋 Licença
+Rodar Agente de Inteligência (RAG):
+```Bash
+python src/agente_rag.py
+```
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/SabrinaOtoni/TEMPLATE-FIAP-GRAD-ON-IA">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">FIAP</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+Dashboard:
+Basta abrir o arquivo src/index.html em qualquer navegador.
+
+🗃 Histórico de lançamentos
+1.0.0 - 10/06/2026
+
+Entrega da POC completa: Integração de visão, ML, RAG e Dashboard.
