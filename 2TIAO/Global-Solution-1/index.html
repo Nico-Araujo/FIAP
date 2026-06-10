@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyGuard Defense System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .card-custom {
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        .terminal-box {
+            background-color: #030712;
+            border: 1px solid #1e293b;
+            color: #38bdf8;
+            font-family: monospace;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+        }
+        .text-neon-green { color: #10b981; }
+        .text-neon-red { color: #ef4444; }
+        .pulse { animation: blinker 1.5s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body class="p-4">
+
+    <header class="d-flex justify-content-between align-items-center border-b border-secondary pb-3 mb-4">
+        <div class="d-flex align-items-center gap-3">
+            <div id="status-icon" class="fs-2 text-neon-red pulse">🛡️</div>
+            <div>
+                <h1 class="h4 fw-bold m-0 tracking-wider text-white">SKYGUARD DEFENSE SYSTEM</h1>
+                <p class="small text-muted m-0">Estação de Monitoramento Aeroespacial Integrada - FIAP GS</p>
+            </div>
+        </div>
+        <button onclick="alternarEstado()" class="btn btn-outline-light btn-sm fw-semibold">
+            🔄 Simular Alternância de Tráfego
+        </button>
+    </header>
+
+    <div class="row g-4">
+        
+        <div class="col-12 col-lg-4">
+            <div class="d-flex flex-column gap-4 h-100">
+                
+                <div class="card-custom">
+                    <h5 class="text-muted small fw-bold text-uppercase mb-3">⚙️ Estação Física (ESP32)</h5>
+                    <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <div class="p-2 bg-dark rounded border border-secondary text-center">
+                                <small class="text-muted d-block">LED Verde</small>
+                                <strong id="led-verde" class="small text-muted">DESATIVADO</strong>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-2 bg-dark rounded border border-secondary text-center">
+                                <small class="text-muted d-block">LED Vermelho</small>
+                                <strong id="led-vermelho" class="small text-neon-red pulse">PISCANDO (Alerta)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terminal-box text-neon-green border-success">
+                        <span class="text-muted d-block">// Visor LCD 20x4 Virtual:</span>
+                        <div id="lcd-linha1">STATUS: ANOMALIA!</div>
+                        <div id="lcd-linha2">V: Mach 4.5 | A: 25.000 pes</div>
+                        <div id="lcd-linha3">Format: Orb</div>
+                    </div>
+                </div>
+
+                <div class="card-custom flex-grow-1">
+                    <h5 class="text-muted small fw-bold text-uppercase mb-3">📡 Whitelist de Tráfego (OpenSky)</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="p-2 bg-dark rounded border border-secondary d-flex justify-content-between align-items-center">
+                            <div><strong class="font-monospace">GLO1446</strong><p class="small text-muted m-0">Altitude: 0m</p></div>
+                            <span class="badge bg-secondary font-monospace">Solo (Congonhas)</span>
+                        </div>
+                        <div class="p-2 bg-dark rounded border border-secondary d-flex justify-content-between align-items-center">
+                            <div><strong class="font-monospace">TAM4661</strong><p class="small text-muted m-0">Altitude: 1767m</p></div>
+                            <span class="badge bg-secondary font-monospace">Em Rota</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card-custom">
+              <h5 class="text-muted small fw-bold text-uppercase mb-3">📊 Sensores e Machine Learning</h5>
+              <p class="small text-muted mb-2">Assinatura Dinâmica: Aceleração Gravitacional (G)</p>
+              <div style="height: 280px; position: relative;">
+                  <canvas id="graficoG"></canvas>
+              </div>
+              <div class="d-flex justify-content-between mt-3 pt-3 border-top border-secondary font-monospace small text-muted">
+                  <span>Acurácia: <strong class="text-neon-green">100% (RF)</strong></span>
+                  <span>Rótulo Atual: <strong id="txt-rotulo" class="text-neon-red">1 (Anomalia)</strong></span>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card-custom">
+                <div class="d-flex justify-content-between align-items-center border-bottom border-secondary pb-2 mb-3">
+                    <h5 class="text-muted small fw-bold text-uppercase m-0">👁️ Laudo de Inteligência RAG</h5>
+                    <span class="badge bg-info text-dark font-monospace fw-bold">LOCAL LLM (Ollama)</span>
+                </div>
+                <div id="laudo-box" class="terminal-box text-white bg-dark border-danger" style="height: 310px; overflow-y: auto;">
+                    <div class="text-neon-red fw-bold mb-2">⚠️ UAP CONFIRMADO PELO RANDOM FOREST</div>
+                    <p class="text-info mb-2">// Cruzamento com dados históricos da NASA:</p>
+                    <p class="m-0 mb-2">"O padrão cinemático registrado pela Visão Computacional (velocidade de <strong>Mach 4.5</strong> com aceleração instantânea de <strong>300G</strong> sem rastro de exaustão térmica) coincide diretamente com as descrições de fenômenos inexplicados de órbita contidas nos relatórios oficiais da AARO."</p>
+                    <p class="m-0"><strong>Parecer:</strong> O formato esférico ('Orb') luminoso mapeado elimina a possibilidade de ser um balão meteorológico convencional ou satélite Starlink. Recomendado alerta imediato.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center small text-muted mt-5 pt-3 border-top border-secondary">
+        SkyGuard AI Project © 2026 - Global Solution • Inteligência Artificial & Computação de Borda
+    </footer>
+
+    <script>
+        let alertaAtivo = true;
+
+        // Configuração Inicial do Gráfico usando Chart.js
+        const ctx = document.getElementById('graficoG').getContext('2d');
+        const grafico = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['14:35', '14:36', '14:37', '14:38', '14:39'],
+                datasets: [{
+                    label: 'Força G Detectada',
+                    data: [1.1, 1.2, 0.9, 350.0, 120.0],
+                    borderColor: '#ef4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { grid: { color: '#1f2937' }, ticks: { color: '#94a3b8' } },
+                    x: { grid: { color: '#1f2937' }, ticks: { color: '#94a3b8' } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+
+        function alternarEstado() {
+            alertaAtivo = !alertaAtivo;
+            
+            const icon = document.getElementById('status-icon');
+            const ledVerde = document.getElementById('led-verde');
+            const ledVermelho = document.getElementById('led-vermelho');
+            const rotulo = document.getElementById('txt-rotulo');
+            const laudo = document.getElementById('laudo-box');
+            
+            if (alertaAtivo) {
+                // Modo Perigo
+                icon.innerText = "🛡️";
+                icon.className = "fs-2 text-neon-red pulse";
+                ledVerde.className = "small text-muted"; ledVerde.innerText = "DESATIVADO";
+                ledVermelho.className = "small text-neon-red pulse"; ledVermelho.innerText = "PISCANDO (Alerta)";
+                rotulo.className = "text-neon-red"; rotulo.innerText = "1 (Anomalia)";
+                
+                document.getElementById('lcd-linha1').innerText = "STATUS: ANOMALIA!";
+                document.getElementById('lcd-linha2').innerText = "V: Mach 4.5 | A: 25.000 pes";
+                document.getElementById('lcd-linha3').innerText = "Format: Orb";
+                
+                laudo.innerHTML = `<div class="text-neon-red fw-bold mb-2">⚠️ UAP CONFIRMADO PELO RANDOM FOREST</div><p class="text-info mb-2">// Cruzamento com dados históricos da NASA:</p><p class="m-0 mb-2">"O padrão cinemático registrado pela Visão Computacional (velocidade de <strong>Mach 4.5</strong> com aceleração instantânea de <strong>300G</strong> sem rastro de exaustão térmica) coincide diretamente com as descrições de fenômenos inexplicados de órbita contidas nos relatórios oficiais da AARO."</p><p class="m-0"><strong>Parecer:</strong> O formato esférico ('Orb') luminoso mapeado elimina a possibilidade de ser um balão meteorológico convencional ou satélite Starlink. Recomendado alerta imediato.</p>`;
+                
+                grafico.data.datasets[0].data = [1.1, 1.2, 0.9, 350.0, 120.0];
+                grafico.data.datasets[0].borderColor = '#ef4444';
+                grafico.data.datasets[0].backgroundColor = 'rgba(239, 68, 68, 0.1)';
+            } else {
+                // Modo Seguro
+                icon.innerText = "✅";
+                icon.className = "fs-2 text-neon-green";
+                ledVerde.className = "small text-neon-green"; ledVerde.innerText = "ATIVADO (Seguro)";
+                ledVermelho.className = "small text-muted"; ledVermelho.innerText = "DESATIVADO";
+                rotulo.className = "text-neon-green"; rotulo.innerText = "0 (Normal)";
+                
+                document.getElementById('lcd-linha1').innerText = "STATUS: CEU SEGURO";
+                document.getElementById('lcd-linha2').innerText = "V: --- | A: ---";
+                document.getElementById('lcd-linha3').innerText = "Format: ---";
+                
+                laudo.innerHTML = `<div class="text-muted text-center py-5">😴 Agente RAG em modo de escuta passiva.<br><small class="text-muted d-block mt-1">Aguardando classificação de anomalia aeroespacial pelo Random Forest.</small></div>`;
+                
+                grafico.data.datasets[0].data = [1.0, 0.9, 1.1, 1.0, 0.9];
+                grafico.data.datasets[0].borderColor = '#10b981';
+                grafico.data.datasets[0].backgroundColor = 'rgba(16, 185, 129, 0.1)';
+            }
+            grafico.update();
+        }
+    </script>
+</body>
+</html>
