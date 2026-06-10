@@ -33,6 +33,9 @@ O SkyGuard atua como um sistema de defesa aeroespacial inteligente, capaz de det
 
 A solução é consolidada através de um Dashboard Inteligente e integração IoT (simulação via ESP32) para alertas físicos. O SkyGuard representa a integração prática de conhecimentos de IA, provando que a convergência tecnológica é o caminho para resolver problemas da nova fronteira espacial.
 
+## 📺 Vídeo
+[Clique aqui para assistir a simulação](https://www.youtube.com/watch?v=oBN3bijrE1U)
+
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
