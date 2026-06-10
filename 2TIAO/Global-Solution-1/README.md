@@ -46,12 +46,6 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
     - `index.html`: Dashboard de monitoramento em tempo real.
 - <b>README.md</b>: Arquivo guia do projeto.
 
-## 📎 Links e Observações
-
-- <b>Vídeo de Apresentação</b>: [INSERIR LINK DO YOUTUBE AQUI]
-- <b>Explicação de decisões técnicas</b>: Optamos por uma arquitetura de processamento local (Edge Computing) com Ollama para garantir que o sistema de defesa seja independente de latência de rede e mantenha a privacidade de dados aeroespaciais sensíveis.
-- <b>Observações Gerais</b>: O projeto é uma POC (Prova de Conceito). Aceitamos participar da competição do pódio.
-
 ## 🔧 Como executar o código
 
 ### Pré-requisitos
