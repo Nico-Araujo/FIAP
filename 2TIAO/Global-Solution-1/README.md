@@ -10,15 +10,13 @@
 
 # SkyGuard Defense System
 
-## Nome do grupo: [INSIRA O NOME DO GRUPO AQUI]
-
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a> 
 - <a href="https://www.linkedin.com/in/vitoria-bagatin-31ba88266/">Vitória Pereira Bagatin</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="LINK_LINKEDIN">Nome do Tutor</a>
+- Caíque Nonato da Silva Bezerra
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/in/andregodoichiovato/">André Godoi Chiovato</a>
 
