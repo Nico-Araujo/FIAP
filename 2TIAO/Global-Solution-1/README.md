@@ -1,11 +1,5 @@
 # FIAP - Faculdade de Informática e Administração Paulista
 
-<p align="center">
-<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
-</p>
-
-<br>
-
 # 🎓 Graduação ON em Inteligência Artificial  
 
 # SkyGuard Defense System
@@ -83,14 +77,12 @@ python src/03_visao_computacional/detectar_objetos.py --webcam
 ```
 
 Rodar Agente de Inteligência (RAG):
-```Bash
-python src/agente_rag.py
-```
+Basta abrir o Google Colab (`agente_RAG.ipynb`) e executar todos os códigos (o processamento leva cerca de 20 minutos)
 
 Dashboard:
-Basta abrir o arquivo src/index.html em qualquer navegador.
+Basta abrir o arquivo index.html em qualquer navegador.
 
 🗃 Histórico de lançamentos
-1.0.0 - 10/06/2026
+1.0.0 - 09/06/2026
 
 Entrega da POC completa: Integração de visão, ML, RAG e Dashboard.
