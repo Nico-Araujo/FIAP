@@ -1,0 +1,38 @@
+RELATÓRIO DE MÉTRICAS - IDENTIFICADOR DE UAPs
+=======================================================
+
+>> ISOLATION FOREST (não supervisionado)
+                precision    recall  f1-score   support
+
+  Convencional       1.00      1.00      1.00       850
+UAP / Anomalia       0.97      0.97      0.97       150
+
+      accuracy                           0.99      1000
+     macro avg       0.98      0.98      0.98      1000
+  weighted avg       0.99      0.99      0.99      1000
+
+
+>> RANDOM FOREST (supervisionado)
+Acurácia: 100.00%
+
+                precision    recall  f1-score   support
+
+  Convencional       1.00      1.00      1.00       255
+UAP / Anomalia       1.00      1.00      1.00        45
+
+      accuracy                           1.00       300
+     macro avg       1.00      1.00      1.00       300
+  weighted avg       1.00      1.00      1.00       300
+
+
+Matriz de Confusão:
+[[255   0]
+ [  0  45]]
+
+Importância das variáveis:
+  formato_codigo            -> 0.356
+  mudanca_direcao_graus     -> 0.301
+  aceleracao_g              -> 0.255
+  altitude_km               -> 0.051
+  assinatura_termica        -> 0.030
+  velocidade_mach           -> 0.008
