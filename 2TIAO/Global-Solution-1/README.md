@@ -43,12 +43,11 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>docs</b>: Pasta destinada à documentação, incluindo relatórios de métricas (`relatorio_metricas.txt`) e diagramas de arquitetura.
 - <b>src</b>: Todo o código fonte desenvolvido.
-    - `01_dataset/`: Script de geração de dados.
+    - `01_dataset/`: Script de geração de dados e o dataset gerado (`anomalias_uap.csv`).
     - `02_machine_learning/`: Treinamento e salvamento do modelo (`modelo_uap.joblib`).
     - `03_visao_computacional/`: Script de detecção via OpenCV.
     - `agente_rag.py`: Cérebro analítico que cruza dados com relatórios da NASA.
     - `index.html`: Dashboard de monitoramento em tempo real.
-- <b>data</b>: Contém o dataset gerado (`anomalias_uap.csv`).
 - <b>README.md</b>: Arquivo guia do projeto.
 
 ## 📎 Links e Observações
