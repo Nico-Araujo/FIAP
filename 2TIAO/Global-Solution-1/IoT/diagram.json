@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "Nícolas Antônio",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 96, "left": 43.24, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 121.2,
+      "left": -111.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 188.4,
+      "left": -111.4,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 176.75,
+      "left": -48,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 243.95,
+      "left": -48,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -128,
+      "left": -71.2,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-38.4", "v182.4", "h249.6" ] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "h-48", "v182.5", "h163.05" ] ],
+    [ "lcd1:SDA", "esp:21", "blue", [ "h-28.8", "v153.8", "h249.6", "v96" ] ],
+    [ "esp:22", "lcd1:SCL", "blue", [ "h19.2", "v-76.8", "h-249.6", "v-134.7" ] ],
+    [ "led2:A", "r2:1", "blue", [ "v0" ] ],
+    [ "led1:A", "r1:1", "blue", [ "v0" ] ],
+    [ "r2:2", "esp:12", "blue", [ "v0" ] ],
+    [ "r1:2", "esp:14", "blue", [ "v0" ] ],
+    [ "led2:C", "esp:GND.1", "black", [ "v28.8", "h134.8", "v-9.6" ] ],
+    [ "led1:C", "esp:GND.1", "black", [ "h-18.8", "v105.6", "h153.6", "v-19.2" ] ]
+  ],
+  "dependencies": {}
+}
