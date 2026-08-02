@@ -14,16 +14,6 @@
 
 Este projeto implementa um sistema inteligente de irrigação utilizando o microcontrolador ESP32, que monitora condições do solo e ativa uma bomba de água automaticamente quando necessários. O sistema integra sensores para umidade, pH simulado e nutrientes (fósforo e potássio), além de um display LCD 20x4 para visualização em tempo real.
 
-## 📁 Estrutura de pastas
-
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
-
-- <b>Herança da Fase 3</b>: Nesta pasta se encontra a versão anterior deste projeto
-- <b>Assets</b>: Aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens e links (youtube e Wokwi)
-- <b>Codigo-Circuito-FarmTech-ESP32.cpp</b>: Código em C++ do circuito
-- <b>Machine Learning Streamlit</b>: Esta pasta contém o banco de dados e os códigos Python com Scikit-learn e Streamlit
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
-
 
 ## 🔧 Como executar o código
 
@@ -62,7 +52,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
  | LCD (SDA) | GPIO21    |
  | LCD (SCL) | GPIO22    |
 
-![Circuito.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Circuito.png)
+![Circuito.png](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Assets/Circuito.png)
 
  > **Importante:** Use os Resistores de 10kΩ entre a entrada do pino ESP32 e VCC no Slide Switch (P) e (K) (Fazendo um pull up)
 
@@ -72,7 +62,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🚀 Execução
 
-1. Copie o código deste repositório: [aqui](https://github.com/Nico-Araujo/FIAP/blob/b2f8d5f77a9c252f9b58ef1d53cf17e6384395c3/Fase%204/FarmTech%20Solutions/Codigo-Circuito-FarmTech-ESP32.cpp)
+1. Copie o código deste repositório: [aqui](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Projetos/Codigo-Circuito-FarmTech-ESP32.cpp)
 2. Cole e execute no software escolhido (IDE Arduino, VS Code, Wokwi...)
 
 ## 🔋 Funcionalidades
@@ -81,24 +71,24 @@ Para verificar a funcionalidade do circuito, basta clicar [aqui](https://youtu.b
 
 - Inicialização do circuito:
 
-![Plotter-variaveis-zeradas.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-variaveis-zeradas.png)
+![Plotter-variaveis-zeradas.png](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Assets/Plotter-variaveis-zeradas.png)
 Circuito iniciado e variáveis zeradas
 
 - Ativação da bomba
 
-![Plotter-var-bomba.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-bomba.png)
+![Plotter-var-bomba.png](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Assets/Plotter-var-bomba.png)
 
 - Leitura da variação de pH
 
-![Plotter-var-pH.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-pH.png)
+![Plotter-var-pH.png](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Assets/Plotter-var-pH.png)
 
 - Leitura da variação de umidade
 
-![Plotter-var-umidade.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-umidade.png)
+![Plotter-var-umidade.png](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Assets/Plotter-var-umidade.png)
 
 - Ativação do circuito
 
-![Plotter-var-geral.png](https://github.com/Nico-Araujo/FIAP/blob/94c13665c69688083bd568db3c46b7712b1a723c/Fase%204/FarmTech%20Solutions/Assets/Plotter-var-geral.png)
+![Plotter-var-geral.png](https://github.com/Nico-Araujo/FIAP/blob/daa0bd65277efbab70b7c723deafc749e1cc6246/1TIAO/FASE4/Assets/Plotter-var-geral.png)
 Nesta imagem do Serial Plotter, é possível observar o circuito em operação durante a simulação. Inicialmente, o solo apresentava níveis baixos de umidade, pH e nutrientes. Após o ajuste dos nutrientes (fósforo e potássio) e a ativação automática da bomba de irrigação, o sistema estabiliza-se progressivamente, atingindo condições ideais de cultivo e demonstrando perfeito equilíbrio.
 
 ## Principais Otimizações Aplicadas
