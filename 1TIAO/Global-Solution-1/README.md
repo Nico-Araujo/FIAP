@@ -37,7 +37,7 @@ O sistema conta com um banco de dados relacional (SQLite) para armazenamento e h
 
 
 ## 📁 Estrutura de pastas
-
+```bash
 Global Solution/
 ├── agroguard/
 │   ├── data/
@@ -63,7 +63,7 @@ Global Solution/
 ├── Global Solution - 1º Semestre.mp4
 ├── Global Solution - 2025.1.pdf
 └── Teste-Circuito.mp4
-
+```
 
 ## 📎 Observações
 
