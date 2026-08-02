@@ -1,133 +1,123 @@
-# FIAP - Faculdade de Informática e Administração Paulista
+# 🌱 FarmTech Solutions - Sistema Integrado de Gestão Agrícola
 
-<p align="center">
-<a href="https://www.fiap.com.br/">
-  <img src="../../assets/logo-fiap.png" 
-       alt="FIAP - Faculdade de Informática e Administração Paulista" 
-       width="40%">
-</a>
-</p>
+## 📋 Descrição do Projeto
 
-<br>
+Este projeto representa a consolidação final do ecossistema FarmTech. Trata-se de uma plataforma Full Stack em Python que integra Backend, Frontend (Streamlit), Ciência de Dados, IoT e Visão Computacional em um único Dashboard interativo.
 
-# 🚀 FASE 7 — [Nome da Fase]
-## 📚 Graduação ON em Inteligência Artificial
+O objetivo é fornecer ao gestor agrícola uma ferramenta centralizada para o planejamento de plantio, controle de estoque, monitoramento de sensores em tempo real e segurança patrimonial via inteligência artificial.
 
----
+## 👨‍🌾 Integrantes do Grupo
+- <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a> 
+- <a href="https://www.linkedin.com/in/vitoria-bagatin-31ba88266/">Vitória Pereira Bagatin</a> 
 
-## 👩🏻‍💻 Sobre esta Fase
+## 🎬 Vídeo Demonstrativo
 
-Esta fase representa uma etapa da minha evolução na Graduação ON em Inteligência Artificial da FIAP.
+Confira a demonstração completa de todas as funcionalidades:
+[CLIQUE AQUI PARA ASSISTIR AO VÍDEO NO YOUTUBE](https://www.youtube.com/watch?v=Bp-qxFiPct8)
 
-Aqui estão organizados:
+📂 Estrutura de Arquivos
 
-- 📖 Conteúdos teóricos estudados
-- 🧠 Conceitos fundamentais consolidados
-- 🛠 Tecnologias aplicadas
-- 📂 Projetos desenvolvidos
-- 📊 Resultados obtidos
-- 🎯 Competências adquiridas
+A organização do projeto segue as melhores práticas de desenvolvimento, separando a lógica (Backend) da interface (Frontend):
 
-Esta documentação tem como objetivo demonstrar, de forma estruturada, o que foi aprendido e aplicado durante esta etapa do curso.
+```text
+Farmtech_Final/
+│
+├── app.py                       # Arquivo Principal (Frontend Streamlit)
+├── requirements.txt             # Lista de dependências
+├── dados_sensores_simulados.csv # Base de dados histórica dos sensores
+│
+├── fases/                       # Módulos de Lógica (Backend)
+│   ├── __init__.py              # (Opcional, mas bom ter)
+│   ├── fase1_calc.py            # Lógica matemática e presets
+│   ├── fase2_db.py              # Conexão Oracle e JSON
+│   ├── fase3_iot.py             # Simulação de Sensores e Edge Computing
+│   ├── fase5_cloud.py           # Integração AWS
+│   ├── fase6_vision.py          # Processamento de Imagem (YOLO)
+│   └── dados_insumos.json       # Banco de dados local (JSON)
+│
+└── assets/                      # Arquivos estáticos
+    ├── best.pt                  # Modelo de I.A. Treinado
+    └── teste.jpeg               # Imagem de exemplo para testes
+````
 
----
 
-## 🎯 Objetivo da Fase
+## 🛠️ Arquitetura e Funcionalidades Integradas
 
-> Descrever aqui o foco principal da fase.
+O projeto foi estruturado de forma modular para garantir organização e escalabilidade. Abaixo, o detalhamento de cada fase integrada:
 
-Exemplo:
+### 🌱 Fase 1: Planejamento Inteligente
 
-- Desenvolver base sólida em Machine Learning supervisionado  
-- Compreender fundamentos de Deep Learning  
-- Construir pipelines completos de dados  
-- Aplicar conceitos de IA em problemas reais  
+- Calculadora agronômica que auxilia na definição de área de plantio e quantidade de insumos.
 
----
+- Destaque: Implementação de presets inteligentes. Ao selecionar a cultura (Soja, Milho, etc.), o sistema ajusta automaticamente a recomendação de insumos (kg/m²) baseada em boas práticas agronômicas.
 
-## 📖 Conteúdos Abordados
+### 🗄️ Fase 2: Banco de Dados Híbrido (Persistência)
 
-- Conceito A
-- Conceito B
-- Conceito C
+- Sistema CRUD (Create, Read, Update, Delete) para gestão de estoque de insumos.
 
----
+- Destaque Técnico: Arquitetura Híbrida/Resiliente.
 
-## 🛠 Tecnologias Utilizadas
+- Modo Online: Preparado para conexão com Oracle Database (Nuvem).
 
-Durante esta fase, foram utilizadas as seguintes tecnologias:
+- Modo Offline (Fallback): Caso a conexão falhe, o sistema alterna automaticamente para um banco de dados local em JSON (dados_insumos.json), permitindo leitura e escrita mesmo sem internet.
 
-- Python
-- SQL
-- Pandas / NumPy
-- Scikit-Learn
-- ...
+### 📡 Fase 3: IoT e Monitoramento (Edge Computing)
 
-*(Ajustar conforme a fase.)*
+- Dashboard de telemetria que simula a leitura de sensores de campo (Umidade do Solo, pH) e sensores de maquinário (Vibração, Temperatura).
 
----
+- Lógica de Automação: O sistema decide sozinho se deve ligar a irrigação baseada na umidade do solo.
 
-## 📂 Projetos Desenvolvidos
+- Segurança Crítica: Implementamos uma regra de "Parada de Emergência". Se o motor da bomba superaquecer (>55°C) ou vibrar excessivamente, o sistema bloqueia a irrigação para proteger o equipamento.
 
-### 📌 Projeto 1 — [Nome do Projeto]
+### ☁️ Fase 5: Cloud Computing (AWS)
 
-**Descrição:**  
-Breve explicação do problema e da solução proposta.
+- Integração com serviços de nuvem para mensageria crítica.
 
-**Tecnologias utilizadas:**  
-- Tecnologia A  
-- Tecnologia B  
+- Funcionalidade: Quando a Fase 3 detecta um erro crítico (ex: falha na bomba), o sistema aciona o módulo AWS para disparar alertas via SNS (Simple Notification Service).
 
-**Principais aprendizados:**  
-- Aprendizado 1  
-- Aprendizado 2  
+- Evidência: O log do disparo e o status da conexão AWS são exibidos no próprio Dashboard.
 
----
+![AWS](https://github.com/Nico-Araujo/Farmtech-Final/blob/7874ef123cb7477f39c62b463daed45c701f7c80/assets/farmtech_dashboard_aws.jpg)
+<br><br>
 
-### 📌 Projeto 2 — [Nome do Projeto]
+### 👁️ Fase 6: Visão Computacional (Segurança)
 
-**Descrição:**  
-Breve explicação do projeto.
+- Sistema de monitoramento visual utilizando Inteligência Artificial (YOLOv8).
 
-**Tecnologias utilizadas:**  
-- Tecnologia A  
-- Tecnologia B  
+- Objetivo: Segurança do trabalho e patrimonial.
 
-**Principais aprendizados:**  
-- Aprendizado 1  
-- Aprendizado 2  
+- Funcionalidade: O modelo analisa imagens da plantação e detecta automaticamente a presença de Agricultores (Pessoas) e Maquinário (Tratores), permitindo o controle de acesso e segurança da área.
 
----
+## 🚀 Como Rodar o Projeto Localmente
 
-### 📌 Projeto 3 — [Nome do Projeto]
+- Pré-requisitos: Python 3.8+ instalado.
 
-**Descrição:**  
-Breve explicação do projeto.
+- Clone o repositório:
 
-**Tecnologias utilizadas:**  
-- Tecnologia A  
-- Tecnologia B  
+git clone [repositório](https://github.com/Nico-Araujo/Farmtech-Final)
+cd Farmtech_Final
 
-**Principais aprendizados:**  
-- Aprendizado 1  
-- Aprendizado 2  
 
----
+- Instale as dependências:
 
-## 🧠 Competências Desenvolvidas
+pip install -r requirements.txt
 
-Ao final desta fase, consolidei:
 
-- ✔️ Capacidade de estruturar problemas de IA
-- ✔️ Construção e avaliação de modelos
-- ✔️ Engenharia de dados e features
-- ✔️ Documentação técnica clara
-- ✔️ Versionamento e organização de código
-- ✔️ Comunicação técnica de soluções
-- ✔️ ...
+- Execute a aplicação:
 
----
+streamlit run app.py
 
-## 📋 Licença
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/SabrinaOtoni/TEMPLATE-FIAP-GRAD-ON-IA">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">FIAP</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+- Caso o comando acima não funcione no Windows, tente: python -m streamlit run app.py
+
+- Acesse: O navegador abrirá automaticamente no endereço local (geralmente http://localhost:8501).
+
+## 📊 Prints da Aplicação
+
+Dashboard Principal
+
+![Dashboard Home](https://github.com/Nico-Araujo/Farmtech-Final/blob/7874ef123cb7477f39c62b463daed45c701f7c80/assets/farmtech_dashboard.jpg)
+
+Monitoramento de Segurança (I.A.)
+
+![Visão Computacional](https://github.com/Nico-Araujo/Farmtech-Final/blob/7874ef123cb7477f39c62b463daed45c701f7c80/assets/farmtech_vs_pessoas.jpg)
