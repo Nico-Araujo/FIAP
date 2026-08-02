@@ -34,10 +34,9 @@ Esta documentação tem como objetivo demonstrar, de forma estruturada, o que fo
 
 ## 👥 Integrantes do Grupo
 
-- Nícolas Antonio Silva Araujo
-- Mariana Barbui dos Santos Zitelli
-- Vitoria Pereira Bagatin
-- Juliano Romeiro Rodrigues
+- <a href="https://www.linkedin.com/in/juliano-romeiro-rodrigues/">Juliano Romeiro Rodrigues</a>
+- <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a> 
+- <a href="https://www.linkedin.com/in/vitoria-bagatin-31ba88266/">Vitória Pereira Bagatin</a> 
 
 ---
 
