@@ -10,75 +10,83 @@
 
 <br>
 
-# Nome do projeto/atividade
-
-## Nome do grupo
+# AgroGuard - Plataforma Inteligente de Prevenção de Desastres no Solo
+## Global Solution 2025.1
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do integrante 5</a>
+
+- <a href="https://www.linkedin.com/in/juliano-romeiro-rodrigues/">Juliano Romeiro Rodrigues</a>
+-  Mariana Barbui dos Santos Zitelli
+- <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a> 
+- <a href="https://www.linkedin.com/in/vitoria-bagatin-31ba88266/">Vitória Pereira Bagatin</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Nome do Tutor</a>
+- Lucas
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/in/andregodoichiovato/">Nome do Coordenador</a>
+- André Godoi Chiovato
 
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto da Global Solution (até 600 palavras)*
+O **AgroGuard** é uma plataforma inteligente e preditiva desenvolvida no contexto do ecossistema agrícola da Global Solution 2025.1 na FIAP. Diante dos crescentes desafios climáticos, instabilidade na umidade do solo e riscos de degradação e erosão em áreas agrícolas, a solução atua na monitoração ativa e prevenção de desastres ambientais no solo.
+
+A aplicação consome dados simulados de sensores agrícolas transmitidos no formato JSON, representando parâmetros físicos essenciais como umidade, pH e níveis de nutrientes. A partir desses dados, um algoritmo de Machine Learning baseado na arquitetura **Random Forest** classifica em tempo real a criticidade do solo (normal, atenção ou crítico) e gera recomendações automatizadas de ações de mitigação preventivas (como ajustes na irrigação, dosagem de fertilizantes e mitigação de erosão).
+
+O sistema conta com um banco de dados relacional (SQLite) para armazenamento e histórico de telemetria e alertas, e disponibiliza uma interface interativa via **Streamlit** que permite a gestores e produtores rurais acompanharem a saúde do solo, analisarem gráficos de tendência e tomarem decisões embasadas em dados preditivos.
 
 
 ## 📁 Estrutura de pastas
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+Global Solution/
+├── agroguard/
+│   ├── data/
+│   │   ├── casos_sucesso.json
+│   │   ├── clima_brasil.json
+│   │   ├── desastres_brasil.json
+│   │   ├── gs_database.db
+│   │   ├── parametros_sensores.json
+│   │   └── recuperacao_solo.json
+│   ├── models/
+│   ├── app.py
+│   ├── preprocess.py
+│   └── requirements.txt
+├── banco_de_dados/
+│   ├── BancoDeDados.py
+│   ├── casos_sucesso.json
+│   ├── clima_brasil.json
+│   ├── desastres_brasil.json
+│   ├── parametros_sensores.json
+│   └── recuperacao_solo.json
+├── Circuito-Esp.png
+├── Codigo-Circuito-Esp.cpp
+├── Global Solution - 1º Semestre.mp4
+├── Global Solution - 2025.1.pdf
+└── Teste-Circuito.mp4
 
-- <b>docs</b>: Pasta destinada à documentação textual, incluindo brainstorm, atas e registros de reuniões, desenhos, prints, diagramas, storyboard, estratégia de IA e arquitetura e etc.
 
-- <b>src</b>: Todo o código fonte desenvolvido, como scripts em Python, R, JS ou HTML, notebooks, códigos para ESP32/Arduino, APIs ou microsserviços, além de modelos, inferências e etc. Os tipos de arquivos e códigos são definidos no enunciado da atividade.
+## 📎 Observações
 
-- <b>data</b>: Contém os dados utilizados, como arquivos CSV, Excel, JSON, bases sintéticas e etc.
-
-- <b>README.md</b>: Arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
-
-
-‼️ OBSERVAÇÃO DO TUTOR, favor desconsiderar do seu arquivo final: não há obrigação de usar todas as pastas, use apenas o que fizer SENTIDO para a entrega. ‼️
-
-
-## 📎 Links e Observações
-
-- <b>Listagem de Links</b>: Links do projeto (ex. vídeos da entrega, páginas, etc.), 
-
-- <b>Explicação de decisões técnicas</b>: Observações do projeto,
-
-- <b>Observações Gerais</b>: Caso o projeto seja relacionado à alguma competição, deixar registrado no README se aceita ou não participar.
+- <b>Explicação de decisões técnicas</b>: 
+  - A escolha do modelo **Random Forest** fundamenta-se em sua robustez para lidar com dados tabulares de sensores físicos e sua baixa tendência a *overfitting*.
+  - A persistência via **SQLite** garante leveza e viabilidade para execuções locais e simuladas sem complexidade de infraestrutura.
+  - O uso do formato **JSON** para simulação dos sensores reflete a estrutura padrão utilizada em protocolos IoT de mercado.
 
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório.*
+### Pré-requisitos
+- **Python 3.8+** instalado
+- **Git** instalado (para clonar o repositório)
 
+### Instalação e Execução
 
-## 🗃 Histórico de lançamentos
+1. Instale dependências:
+```bash
+pip install -r requirements.txt
+```
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
-
----
-
-
-## 📋 Licença
-
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/SabrinaOtoni/TEMPLATE-FIAP-GRAD-ON-IA">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">FIAP</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+2. Execute o app:
+```bash
+streamlit run app.py
+```
