@@ -1,133 +1,198 @@
-# FIAP - Faculdade de Informática e Administração Paulista
+# 🌾 FarmTech Solutions - Previsão de Rendimento Agrícola
 
-<p align="center">
-<a href="https://www.fiap.com.br/">
-  <img src="../../assets/logo-fiap.png" 
-       alt="FIAP - Faculdade de Informática e Administração Paulista" 
-       width="40%">
-</a>
-</p>
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2%2B-orange)](https://scikit-learn.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
 
-<br>
+## 👨‍🎓 Integrantes: 
+- <a href="https://www.linkedin.com/in/juliano-romeiro-rodrigues/">Juliano Romeiro Rodrigues</a>
+- <a href="https://www.linkedin.com/in/nicolas--araujo/">Nicolas Antonio Silva Araujo</a> 
+- <a href="https://www.linkedin.com/in/vitoria-bagatin-31ba88266/">Vitória Pereira Bagatin</a> 
+<br><br>
+## 📋 Sobre o Projeto
+Projeto de Machine Learning para previsão de rendimento de safras agrícolas baseado em condições ambientais e de solo. Desenvolvido como parte da Fase 5 do programa de Graduação em Inteligência Artificial, com foco em Machine Learning e Computação em Nuvem.  
+<br><br>
+## 🎯 Objetivos
+- ✅ **Análise Exploratória**: Compreensão dos padrões dos dados agrícolas
+- ✅ **Clusterização**: Identificação de tendências de produtividade
+- ✅ **Modelagem Preditiva**: 5 modelos de regressão para previsão
+- ✅ **Documentação**: Relatório completo com insights acionáveis  
+<br><br>
+## 📊 Dataset
+### Estrutura dos Dados
+| Variável | Descrição | Tipo |
+|----------|-----------|------|
+| `Crop` | Nome da cultura | Categórica |
+| `Precipitacao` | Precipitação (mm/dia) | Numérica |
+| `Umidade_Especifica` | Umidade específica (g/kg) | Numérica |
+| `Umidade_Relativa` | Umidade relativa (%) | Numérica |
+| `Temperatura` | Temperatura (°C) | Numérica |
+| `Rendimento` | Rendimento (ton/hectare) | Target |
 
-# 🚀 FASE 5 — [Nome da Fase]
-## 📚 Graduação ON em Inteligência Artificial
+### Estatísticas
+- **Amostras**: 156 Registros
+- **Culturas**: 4 Tipos diferentes
+- **Qualidade**: Dados completos sem valores faltando
+<br><br>
+## 🛠️ Tecnologias
+```python```  
 
----
+## Principais bibliotecas
+```pandas==1.5.3```
+```numpy==1.24.3```
+```scikit-learn==1.2.2```
+```xgboost==1.7.6```
+```matplotlib==3.7.1```
+```seaborn==0.12.2```
+```jupyter==1.0.0```  
+<br><br>
+## 📁 Estrutura de pastas
+### <br>data<br>
+Essa pasta armazena todos os datasets utilizados no projeto.
+- <b>crop_yield_cleaned.csv<b>: Versão do dataset original que foi limpa e processada.
+- <b>crop_yield_clustered.csv<b>: Contém os dados com os clusters de produção já identificados.
+- <b>crop_yield_with_outliers.csv<b>: O dataset com os outliers marcados para análise.
 
-## 👩🏻‍💻 Sobre esta Fase
+### <br>models<br>
+Aqui estão salvos todos os modelos de machine learning treinados, assim como os scalers e encoders usados no pré-processamento.
+- <b>linear_regression.pkl<b>: Modelo de Regressão Linear treinado.
+- <b>random_forest.pkl<b>: Modelo Random Forest treinado.
+- <b>mlp.pkl<b>: Modelo MLP Regressor treinado.
+- <b>svr.pkl<b>: Modelo Support Vector Regression treinado.
+- <b>xgboost.pkl<b>: Modelo XGBoost com otimização de hiperparâmetros.
+- <b>scaler.pkl<b>: Objeto scaler usado para a normalização dos dados.
+- <b>label_encoder.pkl<b>: Objeto label encoder utilizado para codificar variáveis categóricas.
+- <b>model_results.json<b>: Arquivo com os resultados e métricas de desempenho de cada modelo.
 
-Esta fase representa uma etapa da minha evolução na Graduação ON em Inteligência Artificial da FIAP.
+### <br>notebooks<br>
+Contém o notebook Jupyter para a análise e desenvolvimento do projeto.
+- <b>NicolasAntonioSilvaAraujo_rm566307_pbl_fase5.ipynb<b>: Notebook principal com a análise exploratória de dados (EDA), pré-processamento, treinamento dos modelos e avaliação  
+<br><br>
+## 🔍 Metodologia
+1. Análise Exploratória
+* Limpeza e pré-processamento dos dados
+* Análise de correlações entre variáveis
+* Identificação e tratamento de outliers
+* Visualizações interativas e análise descritiva
 
-Aqui estão organizados:
+2. Clusterização (KMeans, DBSCAN, GMM)
+* Identificação de clusters de produtividade
+* Detecção de padrões anômalos com Isolation Forest
+* Análise de características por cluster
+* Visualização com redução de dimensionalidade (PCA)
 
-- 📖 Conteúdos teóricos estudados
-- 🧠 Conceitos fundamentais consolidados
-- 🛠 Tecnologias aplicadas
-- 📂 Projetos desenvolvidos
-- 📊 Resultados obtidos
-- 🎯 Competências adquiridas
+3. Modelos de Regressão
+* Linear Regression - Modelo baseline para comparação
+* Random Forest - Ensemble learning com múltiplas árvores
+* XGBoost - Gradient boosting otimizado
+* SVR - Support Vector Regression
+* MLP Regressor - Rede neural artificial  
+<br><br>
+## Insights Principais
+- 🌱 Tipo de Cultura: fator mais significativo para prever o rendimento (variável com uma importância de 0.987 no modelo Random Forest)
+- 🌧️ Precipitação, 💧 Umidade Específica, 🌡️ Temperatura, 💨 Umidade Relativa: As variáveis ambientais tiveram uma importância muito menor no modelo Random Forest, todas abaixo de 0.005. A análise de correlação também mostrou correlações muito baixas entre essas variáveis e o rendimento (todas próximas de zero). Entre elas, a Precipitação e a Umidade Específica tiveram importâncias ligeiramente maiores no Random Forest.
+<br><br>
 
-Esta documentação tem como objetivo demonstrar, de forma estruturada, o que foi aprendido e aplicado durante esta etapa do curso.
+## Notebook Jupyter
+🔗 Clique [AQUI](https://colab.research.google.com/github/Nico-Araujo/FarmTech/blob/main/notebooks/NicolasAntonioSilvaAraujo_rm566307_pbl_fase5.ipynb) para ser redirecionado para o notebook no Google Colab. (O Relatório Detalhado está no final do Notebook!!!)
+<br><br>
 
----
+## Vídeo de Demonstração
+🔗 Clique [AQUI](https://youtu.be/a1x2pR-j4gQ) para ser redirecionado ao vídeo no YouTube.
 
-## 🎯 Objetivo da Fase
+Conteúdo:
+- Demonstração da análise exploratória
+- Visualização dos clusters de produtividade
+- Comparação do desempenho dos modelos
+- Exemplo prático de previsão  
+<br><br>
 
-> Descrever aqui o foco principal da fase.
 
-Exemplo:
+## ☁️ Análise de Custos AWS - Computação em Nuvem
 
-- Desenvolver base sólida em Machine Learning supervisionado  
-- Compreender fundamentos de Deep Learning  
-- Construir pipelines completos de dados  
-- Aplicar conceitos de IA em problemas reais  
+### 💰 Comparação de Custos por Região
 
----
+**Configurações da Máquina:**
+- **CPUs**: 2 vCPUs
+- **Memória**: 1 GiB RAM  
+- **Rede**: Até 5 Gigabit
+- **Armazenamento**: 50 GB (EBS)
+- **Sistema Operacional**: Linux
+- **Tipo de Instância**: t3.micro
+- **Modelo de Cobrança**: On-Demand (100% de utilização)
 
-## 📖 Conteúdos Abordados
+### 📊 Resultados da Comparação
 
-- Conceito A
-- Conceito B
-- Conceito C
+![Comparação de Custos AWS](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/comparacao_custos_aws-yUTeLS7pkDeWTWuQUESZTEH8ApwSSF.png)
 
----
+| Região | Custo Mensal (USD) | Custo Anual (USD) | Diferença |
+|--------|-------------------|-------------------|-----------|
+| **São Paulo (BR)** | $19.86 | $238.32 | +71.4% |
+| **Virgínia do Norte (EUA)** | $11.59 | $139.08 | Base |
 
-## 🛠 Tecnologias Utilizadas
+**Economia Anual**: $99.24 USD (41.6% de redução) escolhendo Virgínia do Norte
 
-Durante esta fase, foram utilizadas as seguintes tecnologias:
+### 🎯 Análise Técnica e Justificativa
 
-- Python
-- SQL
-- Pandas / NumPy
-- Scikit-Learn
-- ...
+**Comparação: São Paulo (BR) vs Virgínia do Norte (EUA)**
 
-*(Ajustar conforme a fase.)*
+Apesar do custo 71.4% maior, a região de São Paulo apresenta vantagens técnicas e regulamentares significativas:
 
----
+#### ✅ **Vantagens da Região São Paulo:**
 
-## 📂 Projetos Desenvolvidos
+1. **📡 Latência Otimizada**
+   - Tempo de resposta < 50ms para sensores localizados no Brasil
+   - Coleta de dados em tempo real mais eficiente
+   - Melhor experiência para usuários brasileiros
 
-### 📌 Projeto 1 — [Nome do Projeto]
+2. **⚖️ Conformidade Legal**
+   - **Lei Geral de Proteção de Dados (LGPD)**: Dados agrícolas sensíveis permanecem em território nacional
+   - **Marco Civil da Internet**: Atendimento às regulamentações brasileiras
+   - **Soberania de Dados**: Eliminação de riscos regulamentares internacionais
 
-**Descrição:**  
-Breve explicação do problema e da solução proposta.
+3. **🌐 Conectividade Regional**
+   - Melhor integração com provedores de internet brasileiros
+   - Redução de custos de transferência de dados internacionais
+   - Suporte técnico em português e fuso horário local
 
-**Tecnologias utilizadas:**  
-- Tecnologia A  
-- Tecnologia B  
+#### ⚠️ **Limitações da Região Virgínia:**
 
-**Principais aprendizados:**  
-- Aprendizado 1  
-- Aprendizado 2  
+- **Latência Elevada**: 150-200ms para acessos do Brasil
+- **Riscos Regulamentares**: Possíveis conflitos com LGPD
+- **Dependência Internacional**: Vulnerabilidade a políticas externas
+- **Custos Ocultos**: Transferência de dados internacionais
 
----
+### 💡 **Análise Custo-Benefício**
 
-### 📌 Projeto 2 — [Nome do Projeto]
+O custo adicional de **$99.24/ano** da região São Paulo oferece:
 
-**Descrição:**  
-Breve explicação do projeto.
+- **Redução de Riscos Legais**: Evita multas de até 2% do faturamento (LGPD)
+- **Performance Superior**: Tempo de resposta 3-4x melhor
+- **Confiabilidade**: Menor dependência de conectividade internacional
+- **Escalabilidade Local**: Facilita expansão no mercado brasileiro
 
-**Tecnologias utilizadas:**  
-- Tecnologia A  
-- Tecnologia B  
+### 🔗 Recursos Utilizados
 
-**Principais aprendizados:**  
-- Aprendizado 1  
-- Aprendizado 2  
+- **Calculadora AWS**: [Link para Estimativa](https://calculator.aws/#/estimate?id=902c151f1ae0b6a3529c83d5ec266aaa56c75d34)
+- **Data da Análise**: 06/09/2025
+- **Modelo de Precificação**: On-Demand com 100% de utilização
 
----
+### 🎥 Vídeo Demonstrativo - Análise AWS
+🔗 Clique [AQUI](https://youtu.be/u0tJuc2HeZU) para ver a demonstração da comparação de custos na calculadora AWS.
 
-### 📌 Projeto 3 — [Nome do Projeto]
+<br><br>
 
-**Descrição:**  
-Breve explicação do projeto.
+## 📋 Conclusões
+### Descobertas Chave:
+- Fator Determinante Principal: O tipo de cultura ('Crop') é o fator mais significativo na determinação do rendimento agrícola neste dataset, demonstrando uma importância muito superior às variáveis ambientais no modelo preditivo.
+- Culturas com Maiores Rendimentos: Entre as culturas analisadas, 'Oil palm fruit' e 'Rice, paddy' apresentaram, em média, rendimentos consideravelmente mais altos em comparação com 'Cocoa, beans' e 'Rubber, natural'.
+- Padrões de Produtividade por Cluster: A clusterização baseada em condições ambientais identificou 7 grupos distintos com diferentes níveis de rendimento médio. O Cluster 6 foi associado à maior produtividade média, caracterizado por condições ambientais específicas (Precipitação média de ~2480 mm/dia, Temperatura média de ~26.43°C, Umidade Relativa média de ~84.17% e Umidade Específica média de ~18.35 g/kg).
+- Impacto das Variáveis Ambientais: Embora menos influentes que o tipo de cultura, as variáveis ambientais (Precipitação, Umidade Específica, Umidade Relativa e Temperatura) influenciam o rendimento e contribuem para a formação dos clusters de produtividade. A precipitação e a umidade específica apresentaram uma levemente maior importância entre as variáveis ambientais no modelo preditivo.
+- Identificação de Outliers: Foram identificados pontos de dados que se desviam dos padrões gerais, tanto pela análise de IQR/Isolation Forest quanto pela clusterização (DBSCAN), indicando possíveis registros com condições ou rendimentos atípicos que podem necessitar de investigação adicional.
+- Modelo Preditivo Eficaz: O modelo Random Forest Regressor demonstrou a melhor performance entre os modelos testados para prever o rendimento, atingindo um alto R² nos dados de teste (0.9945) e validação cruzada (0.9847), indicando que é capaz de explicar uma grande proporção da variabilidade do rendimento.
 
-**Tecnologias utilizadas:**  
-- Tecnologia A  
-- Tecnologia B  
-
-**Principais aprendizados:**  
-- Aprendizado 1  
-- Aprendizado 2  
-
----
-
-## 🧠 Competências Desenvolvidas
-
-Ao final desta fase, consolidei:
-
-- ✔️ Capacidade de estruturar problemas de IA
-- ✔️ Construção e avaliação de modelos
-- ✔️ Engenharia de dados e features
-- ✔️ Documentação técnica clara
-- ✔️ Versionamento e organização de código
-- ✔️ Comunicação técnica de soluções
-- ✔️ ...
-
----
-
-## 📋 Licença
-
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/SabrinaOtoni/TEMPLATE-FIAP-GRAD-ON-IA">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">FIAP</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+### Aplicações Práticas:
+- Otimização Agrícola: Utilizar os insights sobre as condições ambientais associadas a alta produtividade (identificadas na clusterização) e o modelo preditivo para otimizar o manejo das culturas e o uso de insumos em diferentes regiões ou para diferentes tipos de cultura.
+- Previsão e Planejamento: Empregar o modelo preditivo para prever o rendimento esperado com base nas condições ambientais e no tipo de cultura, auxiliando no planejamento da safra, logística e gestão de recursos.
+- Tomada de Decisão Estratégica: As informações sobre o desempenho relativo das diferentes culturas e a identificação dos fatores mais influentes (principalmente o tipo de cultura) podem subsidiar decisões estratégicas sobre quais culturas priorizar ou em quais regiões investir.
+- Monitoramento e Alerta: Desenvolver sistemas de monitoramento que alertem para condições ambientais que se aproximam daquelas associadas a clusters de menor produtividade, permitindo ações corretivas ou preventivas
