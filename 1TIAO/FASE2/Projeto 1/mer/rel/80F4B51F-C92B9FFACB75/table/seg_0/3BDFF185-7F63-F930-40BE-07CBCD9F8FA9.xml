@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BDFF185-7F63-F930-40BE-07CBCD9F8FA9" name="Plantação">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>48984C33-77E6-3688-CB88-4B0BC103EE94</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_plantacao" id="E57AA71B-3001-38AA-4233-5BB06B324FC2">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>07D7D34B-8A33-891F-8ED3-7E8D7C1078CB</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_cultura" id="44F57357-E2F4-BEB8-40E9-1AF4ACE4632C">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>AB56F164-BEA0-2729-913B-92B18D33FC7B</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="localizacao" id="0EC8532B-2FAD-FB7E-7509-C3E5EC386A20">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>982DC1EB-987E-F3D1-7EB2-9F5C987B16EB</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_inicio" id="A1F86183-570B-330E-ADB3-C1561766BD65">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>8458B539-83B5-197E-8D9A-541FBD5CEEDA</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_fim" id="ECDE0361-E46C-4B49-B252-1E756899BAFD">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>179D652E-A0B2-0F3D-A3A8-5B5E32F6451C</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ajuste_id_ajuste" id="57287124-0041-DF4B-8145-4CEFEFFBB719">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>977B3A82-062B-6B70-ACA2-FCFF39868F8A</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B462A1C0-6E8A-27DF-ADF5-B11A4071C5A7" referredColumn="CE09610D-F578-6F1C-939F-4A8BD2A7EE8F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBF6323C-E69B-C2D5-EC24-26A35869AFDE" name="Plantação_PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>9AC45E09-691B-9342-1B02-9C1D61DA4876</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E57AA71B-3001-38AA-4233-5BB06B324FC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40591FAC-75AE-2864-F91C-BC5611837923" name="Plantação_Ajuste_FK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>F2B12341-FC5A-8E8D-1C4F-2F61BCF0DB84</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57287124-0041-DF4B-8145-4CEFEFFBB719"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

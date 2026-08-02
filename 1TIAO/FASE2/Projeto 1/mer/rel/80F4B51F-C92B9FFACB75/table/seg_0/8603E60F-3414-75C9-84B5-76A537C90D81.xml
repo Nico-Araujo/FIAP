@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8603E60F-3414-75C9-84B5-76A537C90D81" name="Sensor">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>44C3FEB3-0B87-10D1-4AF6-132D52BFA682</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor" id="F1A7E902-C5C4-338B-98B7-F4553033A00C">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>489746B6-2EB8-AD08-6643-F6557E66BFEF</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_sensor" id="F5D23BCF-4584-D464-5D67-72337C75D17F">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>69A04FC0-902F-7277-7FA7-CA4A9C54A6A5</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="localizacao" id="870E365E-2F4D-F2EF-5715-264A7D8CA716">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>4A871440-FF08-47F4-3410-76F8059F8709</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="81F38C34-B0B9-D3B1-191A-83C0C506482B">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>4757738F-9316-60C4-4A71-4D0DBDDBB70E</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2686094-942C-6145-0B94-50147115AF8D" name="Sensor_PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>FFE609C4-A723-25F2-2C97-8DE92934BE45</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1A7E902-C5C4-338B-98B7-F4553033A00C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

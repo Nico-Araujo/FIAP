@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBF0B2B0-6B94-4764-4EA3-599F9F28A954" name="Leitura_Plantação">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>4596F08F-9267-F934-0E1E-F975AAC28115</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_leitura" id="767AD034-643E-E359-1181-17377FE9BB79">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>DEB064D2-472E-6ED5-F9FA-2516865EEA8C</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_plantacao" id="8808AF7B-F309-3885-4EA6-12BC818B337D">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>745CCF30-A36E-0450-F3ED-F597F7F650F0</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

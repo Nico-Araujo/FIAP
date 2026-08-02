@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ajuste" directorySegmentName="seg_0" id="F2B12341-FC5A-8E8D-1C4F-2F61BCF0DB84">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:34:33 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<sourcePk>F8AA5311-9B2A-CA71-E239-6288CB5315B7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A4389AC9-DDBF-2A22-90EF-F5E3AC38C0D6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>48984C33-77E6-3688-CB88-4B0BC103EE94</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC03723A-5B22-C88A-70F8-470F15811FAC" name="Leitura">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>4A6EBD54-48B3-B098-7614-CC8E9E937CC6</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_leitura" id="373F3826-E723-5E03-5070-D58F3E803D59">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>706E2468-AA6B-3B69-74CB-E314A323CCE8</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_sensor" id="AC7C7D4E-AF37-D317-2E03-7BA97C753964">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>4E775868-1E97-4BD4-C11B-56F42E756F93</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora" id="84616C5B-3461-CACD-1A0C-04F22F74B0A3">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>D9270BBC-837E-B55D-48A9-F2AEFD4D085C</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_umidade" id="BEAA1547-79D6-EA51-ACBC-44FE9AD690AE">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>EC9630BC-9DC8-A53F-4F15-700C9353866D</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_ph" id="A7C1C064-9E87-F26E-DC13-5C63948A462A">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>5F6DFFE3-25C0-22FB-DD4D-D5A2945278E1</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_nutriente_P" id="6ED079B9-F1CD-C9EA-74D0-C92A8195A511">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>59FEB6F6-D6C5-E32C-0C46-BD2F8AC82BC8</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_nutriente_K" id="57455F21-8DF4-655A-335C-0951E07A5025">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>B58BD224-73AD-3CC3-9AC8-5082FB2F43A1</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sensor_id_sensor" id="55DF4CAB-0C26-1160-6822-15D28F5E88D2">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>84D13FB9-C84D-72A8-B791-6DBD45853760</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AFCF835-22BF-1B60-7871-E3F2C34316CE" referredColumn="F1A7E902-C5C4-338B-98B7-F4553033A00C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19523EA9-8396-D2D8-CA14-B23595294FCD" name="Leitura_PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>92705777-B63E-68E8-9A39-FA74C7292663</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="373F3826-E723-5E03-5070-D58F3E803D59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03C8B7F9-DD1F-80B0-6853-CFB767947B7A" name="Leitura_Sensor_FK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>3411B019-043B-B2E3-BF91-EA1D425A5D0D</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55DF4CAB-0C26-1160-6822-15D28F5E88D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

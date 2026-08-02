@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="realizar_leitura" directorySegmentName="seg_0" id="3411B019-043B-B2E3-BF91-EA1D425A5D0D">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:33:15 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<sourcePk>FFE609C4-A723-25F2-2C97-8DE92934BE45</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>44C3FEB3-0B87-10D1-4AF6-132D52BFA682</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4A6EBD54-48B3-B098-7614-CC8E9E937CC6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

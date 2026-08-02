@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BF6AE1D-4DB9-FBF7-3527-81F67445366B" name="Leitura_plantacao">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<ordsAlias>relacao</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Leitura_id_leitura" id="30DD3FA2-4675-47FC-E318-8F4C94CE5FA7">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E94E2F7D-3539-9541-21D6-E4EF876A43F7" referredColumn="373F3826-E723-5E03-5070-D58F3E803D59"/>
+</associations>
+</Column>
+<Column name="Plantação_id_plantacao" id="F23BF12C-BA75-9D23-2AE7-3EEF52120108">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40566E9B-38E0-F582-A104-48E51A207AF8" referredColumn="E57AA71B-3001-38AA-4233-5BB06B324FC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2D95E42-3E07-7FF6-2C51-175EF86C98A1" name="relacao_PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30DD3FA2-4675-47FC-E318-8F4C94CE5FA7"/>
+<colUsage columnID="F23BF12C-BA75-9D23-2AE7-3EEF52120108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D28994C4-CEEF-2F8D-BFF1-A220C7CAC2B8" name="relacao_Plantação_FK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>76C3BA22-61BB-AA9B-71E0-2AC6E5C3A1F0</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F23BF12C-BA75-9D23-2AE7-3EEF52120108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF5E17C8-D15E-D5B9-AC3B-D1B3FC0FC0D1" name="Leitura_plantacao_Leitura_FK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:45:14 UTC</createdTime>
+<generatorID>76C3BA22-61BB-AA9B-71E0-2AC6E5C3A1F0</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30DD3FA2-4675-47FC-E318-8F4C94CE5FA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A6EBD54-48B3-B098-7614-CC8E9E937CC6" name="Leitura">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:28:03 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_leitura" id="706E2468-AA6B-3B69-74CB-E314A323CCE8">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:28:17 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sensor" id="4E775868-1E97-4BD4-C11B-56F42E756F93">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:29:14 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora" id="D9270BBC-837E-B55D-48A9-F2AEFD4D085C">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:33:36 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_umidade" id="EC9630BC-9DC8-A53F-4F15-700C9353866D">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:34:39 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_ph" id="5F6DFFE3-25C0-22FB-DD4D-D5A2945278E1">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:35:02 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_nutriente_P" id="59FEB6F6-D6C5-E32C-0C46-BD2F8AC82BC8">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:35:35 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_nutriente_K" id="B58BD224-73AD-3CC3-9AC8-5082FB2F43A1">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:35:53 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sensor1" id="84D13FB9-C84D-72A8-B791-6DBD45853760">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:33:15 UTC</createdTime>
+<generatorID>3411B019-043B-B2E3-BF91-EA1D425A5D0D</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<referedAttribute>489746B6-2EB8-AD08-6643-F6557E66BFEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92705777-B63E-68E8-9A39-FA74C7292663" name="Leitura PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:29:12 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>706E2468-AA6B-3B69-74CB-E314A323CCE8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

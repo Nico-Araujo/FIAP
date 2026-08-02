@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5775968C-D0B4-EE56-3560-8400C6AE9B13" name="Ajuste">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>A4389AC9-DDBF-2A22-90EF-F5E3AC38C0D6</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ajuste" id="CE09610D-F578-6F1C-939F-4A8BD2A7EE8F">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>BC051D48-9DDD-00E7-F86C-390CCE003773</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_plantacao" id="A5E8B352-B7F5-8CB4-2312-EE7DACF58D5C">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>788268F2-5831-9A26-36B4-16737A9EBA65</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_ajuste" id="39A56C4B-EE10-0FD2-0F0D-CDD4158B17DF">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>E872DC28-1868-4DA4-F1C2-9702C108B8A3</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade_agua" id="29F070BC-EDBD-4EDA-BD5F-9AE48FC889A7">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>9EAF686C-20F9-BD58-3FFE-45BEF803AED7</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade_fertilizante" id="DE4A7170-93CD-8BA0-9972-1B5E88D96B19">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>17117C39-36F6-D736-0053-76602D5BCDF6</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_ajuste" id="21B6F94D-D7D1-350D-60D1-1D01942DCDCE">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>01010C2A-2C71-0425-51D1-AFF5FE0D5549</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C6EABF5-D84E-CB09-2163-7AF349221568" name="Ajuste_PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>F8AA5311-9B2A-CA71-E239-6288CB5315B7</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE09610D-F578-6F1C-939F-4A8BD2A7EE8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

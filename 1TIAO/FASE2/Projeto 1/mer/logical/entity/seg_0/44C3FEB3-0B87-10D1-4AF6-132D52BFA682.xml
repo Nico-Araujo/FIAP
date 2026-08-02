@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="44C3FEB3-0B87-10D1-4AF6-132D52BFA682" name="Sensor">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:23:28 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sensor" id="489746B6-2EB8-AD08-6643-F6557E66BFEF">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:23:39 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_sensor" id="69A04FC0-902F-7277-7FA7-CA4A9C54A6A5">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:23:56 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="localizacao" id="4A871440-FF08-47F4-3410-76F8059F8709">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:24:45 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="4757738F-9316-60C4-4A71-4D0DBDDBB70E">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:25:07 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FFE609C4-A723-25F2-2C97-8DE92934BE45" name="Sensor PK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 21:23:54 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="80F4B51F-6A32-81B6-F4EC-C92B9FFACB75" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>489746B6-2EB8-AD08-6643-F6557E66BFEF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

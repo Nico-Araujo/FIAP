@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B462A1C0-6E8A-27DF-ADF5-B11A4071C5A7" containerWithKeyObject="3BDFF185-7F63-F930-40BE-07CBCD9F8FA9" localFKIndex="40591FAC-75AE-2864-F91C-BC5611837923" name="Plantação_Ajuste_FK">
+<createdBy>vitor</createdBy>
+<createdTime>2025-04-19 22:40:25 UTC</createdTime>
+<generatorID>F2B12341-FC5A-8E8D-1C4F-2F61BCF0DB84</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<referredTableLongName>Ajuste</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5775968C-D0B4-EE56-3560-8400C6AE9B13</referredTableID>
+<keyObject>4C6EABF5-D84E-CB09-2163-7AF349221568</keyObject>
+<referredKeyID>4C6EABF5-D84E-CB09-2163-7AF349221568</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_ajuste</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
