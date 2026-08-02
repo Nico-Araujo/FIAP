@@ -83,11 +83,19 @@ Durante esta fase, foram utilizadas as seguintes tecnologias:
 **Descrição:**  
 Revisão e reestruturação do firmware em C/C++ no ESP32. Foi adicionado um display LCD 20x4 no barramento I2C (GPIO21/GPIO22) para exibir estado do solo, leituras e status da bomba em tempo real, acompanhado da padronização dos dados para o Serial Plotter.
 
+Análise gráfica e monitoramento contínuo das variáveis do sistema (Umidade, pH, NPK e Status da Bomba) durante o ciclo de operação no Wokwi.
+
 **Principais Otimizações de Memória Aplicadas:**
 - **Tipos Específicos:** Substituição de `int` por `uint8_t` nos pinos e `int16_t` nas leituras analógicas.
 - **Macro `F()`:** Armazenamento de textos constantes do LCD na memória Flash (PROGMEM), liberando RAM.
 - **Agrupamento com `Struct`:** Definição da `struct SensorData` para evitar fragmentação de memória.
 - **Redução de Consumo:** Economia de ~35% no uso da memória RAM comparado à versão anterior.
+
+  
+**Comportamento Observado no Serial Plotter:**
+1. **Inicialização:** Sistema inicia com solo seco e variáveis zeradas.
+2. **Ativação:** Ao detectar umidade baixa e presença dos nutrientes (P e K), a bomba é acionada.
+3. **Estabilização:** A elevação dos níveis de umidade estabiliza o sistema e desliga automaticamente a irrigação assim que atinge a faixa ideal.
 
 **Tecnologias utilizadas:**  
 - C/C++
@@ -111,18 +119,6 @@ Desenvolvimento de uma pipeline em Python utilizando Scikit-Learn para prever a�
 - Treinamento e validação de algoritmos de Machine Learning com dados do solo.
 - Criação de interfaces gráficas para tomada de decisão no agronegócio.
 - Integração dos resultados do modelo preditivo com a interface do usuário.
-
----
-
-### 📌 Projeto 3 — Análise de Sinais via Serial Plotter (Demonstração Wokwi)
-
-**Descrição:**  
-Análise gráfica e monitoramento contínuo das variáveis do sistema (Umidade, pH, NPK e Status da Bomba) durante o ciclo de operação no Wokwi.
-
-**Comportamento Observado no Serial Plotter:**
-1. **Inicialização:** Sistema inicia com solo seco e variáveis zeradas.
-2. **Ativação:** Ao detectar umidade baixa e presença dos nutrientes (P e K), a bomba é acionada.
-3. **Estabilização:** A elevação dos níveis de umidade estabiliza o sistema e desliga automaticamente a irrigação assim que atinge a faixa ideal.
 
 ---
 
